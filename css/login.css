@@ -37,6 +37,17 @@ h3 {
     color: #5CA2E5;
 }
 
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
 
 /* Header */
 
