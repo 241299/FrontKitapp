@@ -1130,8 +1130,8 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
 
 .document .image {
     padding-top: 0px;
-    max-width: 200px;
-    min-width: 200px;
+    max-width: 140px;
+    min-width: 140px;
     margin-right: 15px;
 }
 
