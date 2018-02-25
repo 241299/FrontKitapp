@@ -1895,7 +1895,7 @@ select option {
     height: 100%;
     display: block;
     z-index: -1;
-    background: url(../img/bg.jpg);
+    background: url(../images/bg.jpg);
     background-size: cover;
     -webkit-filter: blur(10px);
     filter: blur(10px);
@@ -1962,7 +1962,7 @@ select option {
     cursor: pointer;
 }
 
-.login-page .form-holder .form a.forgot-pass, .login-page .form-holder .form a.signup {
+.login-page .form-holder .form a.forgot-pass, .login-page .form-holder .form a.support {
     font-size: 0.9em;
     color: #85b4f2;
 }
