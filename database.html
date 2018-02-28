@@ -41,7 +41,7 @@
                 <div class="navbar-holder d-flex align-items-center justify-content-between">
                     <!-- Navbar Header-->
                     <div class="navbar-header">
-                        <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+                        <!-- Navbar Brand --><a href="catalog.html" class="navbar-brand">
                         <div class="brand-text brand-big"><strong>Kitapp</strong><span>LMS</span></div>
                         <div class="brand-text brand-small"><strong>BD</strong></div>
                     </a>
@@ -50,9 +50,6 @@
                     </div>
                     <!-- Navbar Menu -->
                     <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                        <!-- Search-->
-                        <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i
-                                class="fa fa-search"></i></a></li>
                         <!-- Notifications-->
                         <li class="nav-item dropdown"><a id="notifications" rel="nofollow" data-target="#" href="#"
                                                          data-toggle="dropdown" aria-haspopup="true"
@@ -101,37 +98,6 @@
                                 </a></li>
                                 <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
                                     <strong>view all notifications </strong></a></li>
-                            </ul>
-                        </li>
-                        <!-- Messages                        -->
-                        <li class="nav-item dropdown"><a id="messages" rel="nofollow" data-target="#" href="#"
-                                                         data-toggle="dropdown" aria-haspopup="true"
-                                                         aria-expanded="false" class="nav-link"><i
-                                class="fa fa-envelope-o"></i><span class="badge bg-orange">10</span></a>
-                            <ul aria-labelledby="notifications" class="dropdown-menu">
-                                <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                                    <div class="msg-profile"><img src="images/avatar-1.jpg" alt="..."
-                                                                  class="img-fluid rounded-circle"></div>
-                                    <div class="msg-body">
-                                        <h3 class="h5">Jason Doe</h3><span>Sent You Message</span>
-                                    </div>
-                                </a></li>
-                                <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                                    <div class="msg-profile"><img src="images/avatar-2.jpg" alt="..."
-                                                                  class="img-fluid rounded-circle"></div>
-                                    <div class="msg-body">
-                                        <h3 class="h5">Frank Williams</h3><span>Sent You Message</span>
-                                    </div>
-                                </a></li>
-                                <li><a rel="nofollow" href="#" class="dropdown-item d-flex">
-                                    <div class="msg-profile"><img src="images/avatar-3.jpg" alt="..."
-                                                                  class="img-fluid rounded-circle"></div>
-                                    <div class="msg-body">
-                                        <h3 class="h5">Ashley Wood</h3><span>Sent You Message</span>
-                                    </div>
-                                </a></li>
-                                <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
-                                    <strong>Read all messages </strong></a></li>
                             </ul>
                         </li>
                         <!-- Logout    -->
@@ -205,43 +171,35 @@
                                                 <th>Name</th>
                                                 <th>Surname</th>
                                                 <th>Type</th>
-                                                <th>E-mail</th>
-                                                <th>Telegram</th>
-                                                <th>Book</th>
-                                                <th>Due to</th>
-                                                <th>Notes</th>
+                                                <th>Document</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td>Elon</td>
-                                                <td>Musk</td>
+                                                <th><a href="user-card.html">Elon</a></th>
+                                                <th><a href="user-card.html">Musk</a></th>
                                                 <td>Student</td>
-                                                <td>e.musk@innopolis.ru</td>
-                                                <td>@elonmusk</td>
                                                 <td><a href="">Intoduction to algorithms</a></td>
                                                 <td>05.03</td>
                                                 <td><button type="button" class="btn btn-dark">Outstanding request</button></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">2</th>
-                                                <td>Elon</td>
-                                                <td>Musk</td>
+                                                <th><a href="user-card.html">Elon</a></th>
+                                                <th><a href="user-card.html">Musk</a></th>
                                                 <td>Student</td>
-                                                <td>e.musk@innopolis.ru</td>
-                                                <td>@elonmusk</td>
                                                 <td><a href="">Intoduction to algorithms</a></td>
                                                 <td>05.03</td>
                                                 <td><button type="button" class="btn btn-dark">Outstanding request</button></td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">3</th>
-                                                <td>Elon</td>
-                                                <td>Musk</td>
-                                                <td>Student</td>
-                                                <td>e.musk@innopolis.ru</td>
-                                                <td>@elonmusk</td>
+                                                <th><a href="user-card.html">Hamna</a></th>
+                                                <th><a href="user-card.html">Aslam</a></th>
+                                                <td>Faculty</td>
                                                 <td><a href="">Intoduction to algorithms</a></td>
                                                 <td>Returned</td>
                                                 <td><button type="button" class="btn btn-dark">Outstanding request</button></td>
@@ -251,87 +209,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="tables">
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-close">
-                            <div class="dropdown">
-                                <button type="button" id="closeCard5" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i>
-                                </button>
-                                <div aria-labelledby="closeCard5" class="dropdown-menu dropdown-menu-right has-shadow">
-                                    <a href="#" class="dropdown-item remove"> <i class="fa fa-times"></i>Close</a><a
-                                        href="#" class="dropdown-item edit"> <i class="fa fa-gear"></i>Edit</a></div>
-                            </div>
-                        </div>
-                        <div class="card-header d-flex align-items-center">
-                            <h3 class="h4">User Data</h3>
-                        </div>
-                        <div class="card-body">
-                            <form class="form-horizontal">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">First Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" value="Elon" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">Last Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" value="Musk" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">E-mail</label>
-                                    <div class="col-sm-9">
-                                        <input type="email" class="form-control" value="e.musk@innopolis.ru" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">Password</label>
-                                    <div class="col-sm-9">
-                                        <input type="password" name="password" class="form-control" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">Telegram alias</label>
-                                    <div class="col-sm-9">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend"><span class="input-group-text">@</span>
-                                                </div>
-                                                <input type="text" placeholder="Username" class="form-control" value="elonmusk"required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-3 form-control-label">User type</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" disabled="" placeholder="Student"
-                                               class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="fileInput" class="col-sm-3 form-control-label">Avatar</label>
-                                    <div class="col-sm-9">
-                                        <input id="fileInput" type="file" class="form-control-file">
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="form-group row">
-                                    <div class="col-sm-4 offset-sm-3">
-                                        <button type="submit" class="btn btn-secondary">Cancel</button>
-                                        <button type="submit" class="btn btn-primary">Request for changes</button>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
