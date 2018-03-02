@@ -68,23 +68,23 @@ table {
     color: #666;
 }
 
-.card-close {
+.card-dropdown {
     position: absolute;
     top: 15px;
     right: 15px;
 }
 
-.card-close .dropdown-toggle {
+.card-dropdown .dropdown-toggle {
     color: #999;
     background: none;
     border: none;
 }
 
-.card-close .dropdown-toggle:after {
+.card-dropdown .dropdown-toggle:after {
     display: none;
 }
 
-.card-close .dropdown-menu {
+.card-dropdown .dropdown-menu {
     border: none;
     min-width: auto;
     font-size: 0.9em;
@@ -93,16 +93,16 @@ table {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1), -2px -2px 3px rgba(0, 0, 0, 0.1);
 }
 
-.card-close .dropdown-menu a {
+.card-dropdown .dropdown-menu a {
     color: #999 !important;
 }
 
-.card-close .dropdown-menu a:hover {
+.card-dropdown .dropdown-menu a:hover {
     background: #796AEE;
     color: #fff !important;
 }
 
-.card-close .dropdown-menu a i {
+.card-dropdown .dropdown-menu a i {
     margin-right: 10px;
     -webkit-transition: none;
     transition: none;
