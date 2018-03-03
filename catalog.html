@@ -156,30 +156,61 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <strong>Search by:</strong>
-                                    <label><input type="checkbox" checked/>Title</label>
-                                    <label><input type="checkbox" checked/>Author</label>
-                                    <label><input type="checkbox" checked/>Type</label>
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <strong>Search by:</strong>
+                                        </div>
+                                        <div class="col-lg-5 ">
+                                            <div class="i-checks">
+                                                <input id="search-by-title" type="checkbox" value=""
+                                                       class="checkbox-template" checked>
+                                                <label for="search-by-title">Title</label>
 
+                                            </div>
+                                            <div class="i-checks">
+                                                <input id="search-by-author" type="checkbox" value=""
+                                                       class="checkbox-template" checked>
+                                                <label for="search-by-author">Author</label>
+                                            </div>
+                                            <div class="i-checks">
+                                                <input id="search-by-type" type="checkbox" value=""
+                                                       class="checkbox-template" checked>
+                                                <label for="search-by-type">Type</label>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <strong>Sort by:</strong>
+                                        </div>
+                                        <div class="col-lg-2 ">
+                                            <label>
+                                                <select class="form-control">
+                                                    <option value="title">Title</option>
+                                                    <option value="author">Author</option>
+                                                    <option value="type">Type</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </div>
 
-                                    <strong>Sort by:</strong>
-                                    <label>
-                                        <select>
-                                            <option value="title">Title</option>
-                                            <option value="author">Author</option>
-                                            <option value="type">Type</option>
-                                        </select>
-                                    </label>
+                                    <div class="row">
+                                        <div class="col-lg-5 ">
+                                            <input type="search" class="form-control" placeholder="Documents searching"
+                                                   required>
+                                        </div>
+                                        <div class="col-lg-1">
+                                            <input type="submit" class="btn" value="Search">
+                                        </div>
+                                    </div>
 
-
-                                    <input type="search" class="form-control" placeholder="Documents searching"
-                                           required>
-                                    <input type="submit" class="btn" value="Search">
                                 </div>
                             </div>
+
+
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -321,7 +352,7 @@
         </div>
     </div>
 </div>
-<!-- Javascript files
+<!-- Javascript files-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="vendor/popper.js/umd/popper.min.js"> </script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
