@@ -237,18 +237,63 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="edit-copies" class="col-2 col-form-label">Copies</label>
-                                    <div class="col-10">
-                                        <input class="form-control" type="number" value="10" id="edit-copies">
+                                    <label for="edit-copies"  class="col-2 col-form-label">Copies</label>
+                                    <div class="col-5">
+                                        <input  readonly="readonly" class="form-control" type="number" value="10" id="edit-copies">
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    <label for="edit-copies" class=" col-6 col-form-label"><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show all copies</a></label>
+                                    <div class="container-fluid">
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-block">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>ID</th>
+                                                    <th>Status</th>
+                                                    <td><button class="btn btn-primary"><i class="fa fa-plus" style="color:limegreen"></i></button></td>
+
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>73voge8e83</td>
+                                                    <td>On hands</td>
+                                                    <td><button class="btn btn-outline-secondary"><i class="fa fa-times" style="color:crimson"></i></button></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>837980ghhjd</td>
+                                                    <td>Available</td>
+                                                    <td><button class="btn btn-outline-secondary"><i class="fa fa-times" style="color:crimson"></i></button></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>4870984hgje</td>
+                                                    <td>Not available</td>
+                                                    <td><button class="btn btn-outline-secondary"><i class="fa fa-times" style="color:crimson"></i></button></td>
+
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                    <div class="form-group row">
                                     <label for="edit-keywords" class="col-2 col-form-label">Keywords</label>
                                     <div class="col-10">
                                         <input class="form-control" type="text" value="it, oop, eiffel"
                                                id="edit-keywords">
                                     </div>
                                 </div>
+
+
                                 <div class="form-group">
                                     <label for="edit-description">Description</label>
                                     <textarea class="form-control" id="edit-description"
@@ -286,14 +331,40 @@
                                     <span class='label label-info' id="upload-file-info"></span>
                                 </div>
 
+
                             </form>
+
+
                         </div>
 
+
+
                         <div class="modal-footer">
+                            <button type="button" class="btn btn-danger">Delete</button>
                             <button type="button" class="btn btn-primary">Save changes</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
 
+                    </div>
+
+                    <div class="modal fade" id="delInst">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -321,6 +392,32 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(function(){
+        $('#login').popover({
+
+            placement: 'bottom',
+            title: 'Popover Form',
+            html:true,
+            content:  $('#myForm4').html()
+        }).on('click', function(){
+            // had to put it within the on click action so it grabs the correct info on submit
+            $('#login').click(function(){
+                $('#result').after("form submitted by " + $('#email').val())
+                $.post('/echo/html/',  {
+                    email: $('#email').val(),
+                    name: $('#name').val(),
+                    gender: $('#gender').val()
+                }, function(r){
+                    $('#pops').popover('hide')
+                    $('#result').html('resonse from server could be here' )
+                })
+            })
+        })
+    })
+
+</script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="vendor/popper.js/umd/popper.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
