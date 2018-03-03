@@ -181,7 +181,7 @@
                                     </button>
                                 </div>
                                 <div class="right-col col-lg-2 m-auto">
-                                    <button id="edit" type="button" class="btn btn-info book-btn">EDIT</button>
+                                    <button id="edit" type="button" class="btn btn-info book-btn" data-toggle="modal" data-target="#myModal">EDIT</button>
                                     <button id="request" type="button" class="btn btn-info book-btn">REQUEST</button>
                                 </div>
                             </div>
@@ -191,7 +191,112 @@
                 </div>
             </section>
 
-            <!-- Page Footer-->
+
+            <!-- Trigger the modal with a button
+                                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                                            <!-- Modal -->
+
+
+
+
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update book info</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-2 col-form-label">Title</label>
+                        <div class="col-10">
+                            <input class="form-control" type="text" value="Touch of class" id="example-text-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-search-input" class="col-2 col-form-label">Authors</label>
+                        <div class="col-10">
+                            <input class="form-control" type="text" value="Bertrand Meyer" id="example-search-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-2 col-form-label">Edition</label>
+                        <div class="col-10">
+                            <input class="form-control" type="text" value="3" id="example-email-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-url-input" class="col-2 col-form-label">Year</label>
+                        <div class="col-10">
+                            <input class="form-control" type="number" value="2017" id="example-url-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-number-input" class="col-2 col-form-label">Copies</label>
+                        <div class="col-10">
+                            <input class="form-control" type="number" value="10" id="example-number-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-password-input" class="col-2 col-form-label">Keywords</label>
+                        <div class="col-10">
+                            <input class="form-control" type="text" value="it, oop, eiffel" id="example-password-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label >Description</label>
+                        <textarea class="form-control" id="Eiffel one love" rows="3" >Eiffel one love</textarea>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Bestseller
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Reference book
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Not available
+                        </label>
+                    </div>
+
+                    <div style="position:relative;">
+                        <a class='btn btn-primary' href='javascript:;'>
+                            Change image...
+                            <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+                        </a>
+                        &nbsp;
+                        <span class='label label-info' id="upload-file-info"></span>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Page Footer-->
             <footer class="main-footer">
                 <div class="container-fluid">
                     <div class="row">
