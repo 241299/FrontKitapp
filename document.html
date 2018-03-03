@@ -108,10 +108,10 @@
         <nav class="side-navbar">
             <!-- Sidebar Header-->
             <div class="sidebar-header d-flex align-items-center">
-                <div class="avatar"><img src="images/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                <div class="avatar"><img id="sidebar-avatar" src="images/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
                 <div class="title">
-                    <h1 class="h4">Elon Musk</h1>
-                    <p>Student</p>
+                    <h1 id="sidebar-username" class="h4">Elon Musk</h1>
+                    <p id="sidebar-usertype">Student</p>
                 </div>
             </div>
             <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
@@ -137,23 +137,23 @@
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-header d-flex align-items-center">
-                            <h3 class="h4">Introduction to Algorithms</h3>
+                            <h3 id="title" class="h4">Introduction to Algorithms</h3>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class=" col-lg-2">
                                     <div class="image has-shadow">
-                                        <img src="images/book1.jpeg" alt="..." class="img-fluid">
+                                        <img id="document-image" src="images/book1.jpg" alt="..." class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="col-lg-8  m-auto">
-                                    <h4>Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
+                                    <h4 id="author">Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
                                         Stein</h4>
-                                    <h5>3rd edition, 2009</h5>
-                                    <h6>Avaliable copies: 3/10</h6>
-                                    <h6>Keywords: Programming, algorithms, data structures</h6>
+                                    <h5 id="edition">3rd edition, 2009</h5>
+                                    <h6 id="avaliable-copies">Avaliable copies: 3/10</h6>
+                                    <h6 id="keywords">Keywords: Programming, algorithms, data structures</h6>
                                     <br>
-                                    <small>Introduction to Algorithms is a book by Thomas H. Cormen, Charles E.
+                                    <small id="description">Introduction to Algorithms is a book by Thomas H. Cormen, Charles E.
                                         Leiserson, Ronald L. Rivest, and Clifford Stein.
                                         The first edition of the book was widely used as the textbook for algorithms
                                         courses at many universities and
@@ -167,13 +167,13 @@
                                         <br>
                                     </small>
                                     <br>
-                                    <button type="button" class="btn btn-sm bg-blue">#book</button>
-                                    <button type="button" class="btn btn-sm bg-green">#avaliable</button>
-                                    <button type="button" class="btn btn-sm bg-yellow">#usual</button>
+                                    <button id="document-type" type="button" class="btn btn-sm bg-blue">#book</button>
+                                    <button id="availability" type="button" class="btn btn-sm bg-green">#avaliable</button>
+                                    <button id="bestseller" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
                                 </div>
                                 <div class="right-col col-lg-2 m-auto">
-                                    <button type="button" class="btn btn-info book-btn">EDIT</button>
-                                    <button type="button" class="btn btn-info book-btn">REQUEST</button>
+                                    <button id="edit" type="button" class="btn btn-info book-btn">EDIT</button>
+                                    <button id="request" type="button" class="btn btn-info book-btn">REQUEST</button>
                                 </div>
                             </div>
                         </div>
