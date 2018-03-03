@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>User card | Kitapp</title>
+    <title>Dashboard | Kitapp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
@@ -96,7 +96,8 @@
                         </li>
                         <!-- Logout    -->
                         <li class="nav-item">
-                            <a id="logout" href="login.html" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a>
+                            <a id="logout" href="login.html" class="nav-link logout">Logout<i
+                                    class="fa fa-sign-out"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -108,10 +109,11 @@
         <nav class="side-navbar">
             <!-- Sidebar Header-->
             <div class="sidebar-header d-flex align-items-center">
-                <div class="avatar"><img src="images/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+                <div class="avatar"><img id="sidebar-avatar" src="images/avatar-1.jpg" alt="..."
+                                         class="img-fluid rounded-circle"></div>
                 <div class="title">
-                    <h1 class="h4">Elon Musk</h1>
-                    <p>Student</p>
+                    <h1 id="sidebar-username" class="h4">Elon Musk</h1>
+                    <p id="sidebar-usertype">Student</p>
                 </div>
             </div>
             <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
@@ -134,25 +136,17 @@
                 </div>
             </header>
 
-            <section class="tables">
-                <div class="container-fluid">
-                    <div class="row">
-                        Welcome to Inno Library!
-                        </div>
-                    </div>
-            </section>
-
+            <section class="welcome">
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-header d-flex align-items-center">
-                            <h3 class="h4">Innopolis University Library</h3>
+                            <h3 class="h4">Welcome to Innopolis University Library!</h3>
                         </div>
                         <div class="card-body">
-                            <form class="form-horizontal">
-
-                                Innopolis is a new Russian city, located in the Republic of Tatarstan. The city’s economy is based on high-tech industries. In Innopolis, a unique environment has been created that combines a modern residential infrastructure in harmony with the nature, safe environment, and broad opportunities for education and professional development.
-
-                            </form>
+                            <b>Schedule: </b>
+                            Monday, Wednesday, Friday (except holidays), 13:00 — 17:30
+                            <br><br>
+                            <b>Location: </b>IU, 504b
                         </div>
                     </div>
                 </div>
