@@ -153,7 +153,6 @@
                                 </div>
                                 <div class="card-body">
                                     <strong>Search by:</strong>
-                                    <label><input type="checkbox" checked/>Name</label>
                                     <label><input type="checkbox" checked/>Title</label>
                                     <label><input type="checkbox" checked/>Author</label>
                                     <label><input type="checkbox" checked/>Type</label>
@@ -162,14 +161,13 @@
                                     <br>
 
                                     <strong>Sort by:</strong>
-                                    <label><input type="checkbox" checked/>Name</label>
-                                    <label><input type="checkbox"/>Author</label>
-                                    <label><input type="checkbox"/>Type</label></p>
-                                    <select>
-                                        <option value = "title">Title</option>
-                                        <option value = "author">Author</option>
-                                        <option value = "type">Type</option>
-                                    </select>
+                                    <label>
+                                        <select>
+                                            <option value="title">Title</option>
+                                            <option value="author">Author</option>
+                                            <option value="type">Type</option>
+                                        </select>
+                                    </label>
 
 
                                     <input type="search" class="form-control" placeholder="Documents searching" required>
