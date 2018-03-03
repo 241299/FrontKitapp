@@ -235,20 +235,16 @@
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">User type</label>
-                                    <div class="col-sm-9">
-                                        <div class="i-checks">
-                                            <input id="radioLibrarian" type="radio" disabled="" checked=""
-                                                   class="radio-template">
-                                            <label for="radioLibrarian">Librarian</label>
-                                        </div>
-                                        <div class="i-checks">
-                                            <input id="radioFaculty" type="radio" disabled="" class="radio-template">
-                                            <label for="radioFaculty">Faculty</label>
-                                        </div>
-                                        <div class="i-checks">
-                                            <input id="radioStudent" type="radio" disabled="" class="radio-template">
-                                            <label for="radioStudent">Student</label>
-                                        </div>
+                                    <div class="col-sm-9"><div class="dropdown disabled">
+                                        <select disabled>
+                                            <option>Student</option>
+                                            <option>Faculty</option>
+                                            <option>Librarian</option>
+                                        </select>
+                                        <script>
+
+                                        </script>
+                                </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -291,7 +287,6 @@
 
     </div>
 </div>
-<!-- Javascript files
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="vendor/popper.js/umd/popper.min.js"> </script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -299,7 +294,6 @@
 <script src="vendor/chart.js/Chart.min.js"></script>
 <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
 <script src="js/charts-home.js"></script>
-<!-- Main File-->
 <script src="js/front.js"></script>
 </body>
 </html>
