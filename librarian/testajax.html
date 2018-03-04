@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+
     <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
-</head>
-<body>
+
 <script type="text/javascript">
     /*fetch('http://localhost:8080/kfc')
                 .then((res) => {
@@ -16,14 +18,32 @@
                 .catch((err) => {
                     console.log(err);
                 });*/
-    $.ajax({
-        type: 'GET',
-        data:{"token":"35a4bd2c"},
-        url: 'https://kitapptatar.ru/api/books/all',
-        dataType: 'json',
-        success: function(data) {
-            console.log(data)
+    $('#example').dataTable( {
+        "ajax": {
+            "type" : 'GET',
+            "data" : {"token": "35a4bd2c"},
+            "url": 'https://kitapptatar.ru/api/books/all',
         }
-    });
+    } );
+
+
+
+
 </script>
+</head>
+
+<body>
+<div class="container">
+    <table id="table" data-height="460">
+        <thead>
+        <tr>
+            <th data-field="id">Item ID</th>
+            <th data-field="name">Item Name</th>
+            <th data-field="price">Item Price</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
 </body>
+</html>
