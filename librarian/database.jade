@@ -3,7 +3,7 @@ html
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
-        title Dashboard | Kitapp
+        title Database | Kitapp
         meta(name='description', content='')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='robots', content='all,follow')
@@ -121,7 +121,7 @@ html
                                 | User Card
                     span.heading Extras
                     ul.list-unstyled
-                        li
+                        li.active
                             a(href='database.html')
                                 i.fa.fa-database
                                 | Database
@@ -133,19 +133,95 @@ html
                     // Page Header
                     header.page-header
                         .container-fluid
-                            h2.no-margin-bottom Dashboard
-                    section.welcome
+                            h2.no-margin-bottom Database
+                    section.tables
                         .container-fluid
-                            .card
-                                .card-header.d-flex.align-items-center
-                                    h3.h4 Welcome to Innopolis University Library!
-                                .card-body
-                                    b Schedule: 
-                                    |                             Monday, Wednesday, Friday (except holidays), 13:00 — 17:30
-                                    br
-                                    br
-                                    b Location: 
-                                    | IU, 504b
+                            .row
+                                .col-lg-12
+                                    .card
+                                        .card-dropdown
+                                            .dropdown
+                                                button#database-dropdown-menu.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                                    i.fa.fa-ellipsis-v
+                                                .dropdown-menu.dropdown-menu-right.has-shadow(aria-labelledby='database-dropdown-menu')
+                                                    a#add-new-entry.dropdown-item.remove(href='#')
+                                                        i.fa.fa-plus
+                                                        | Add new entry
+                                        .card-header.d-flex.align-items-center
+                                            h3.h4 Database
+                                        .card-body
+                                            .table-responsive
+                                                table.table.table-striped.table-hover
+                                                    thead
+                                                        tr
+                                                            th#row-0 ID
+                                                            th#name-0 Name
+                                                            th#surname-0 Surname
+                                                            th#user-type-0 User Type
+                                                            th#document-0 Document
+                                                            th#status-0 Status
+                                                            th#actions-0 Actions
+                                                    tbody
+                                                        tr
+                                                            th#row-1(scope='row')
+                                                                a(href='user-card.html') 12345354
+                                                            th
+                                                                a#name-1 Elon
+                                                            th
+                                                                a#surname-1 Musk
+                                                            td#user-type-1 Student
+                                                            td
+                                                                a#document-1(href='document.html') Intoduction to algorithms
+                                                            td#status-1 Due 05.03
+                                                            td
+                                                                button#returned-1.btn.btn-success(type='button')
+                                                                    | Return
+                                                                p
+                                                                button#outstanding-request-1.btn.btn-warning(type='button')
+                                                                    | Outstanding request
+                                                        tr
+                                                            th#row-2(scope='row')
+                                                                a(href='user-card.html') 12334554
+                                                            th
+                                                                a#name-2 Steve
+                                                            th
+                                                                a#surname-2 Jobs
+                                                            td#user-type-2 Student
+                                                            td
+                                                                a#document-2(href='document.html') Intoduction to algorithms
+                                                            td#status-2 Due 05.03
+                                                            td
+                                                                button#returned-2.btn.btn-success(type='button')
+                                                                    | Return
+                                                                p
+                                                                button#outstanding-request-2.btn.btn-warning(type='button')
+                                                                    | Outstanding request
+                                                        tr
+                                                            th#row-3(scope='row')
+                                                                a(href='user-card.html') 12354
+                                                            th
+                                                                a#name-3 Charles
+                                                            th
+                                                                a#surname-3 Darwin
+                                                            td#user-type-3 Faculty
+                                                            td
+                                                                a#document-3(href='document.html') Intoduction to algorithms
+                                                            td#status-3 Returned
+                                                            td
+                                                        tr
+                                                            th#row-1afe(scope='row')
+                                                                a(href='user-card.html') 12345354
+                                                            th
+                                                                a#name-1fs Elon
+                                                            th
+                                                                a#surnadfsme-1 Musk
+                                                            td#user-typdfse-1 Student
+                                                            td
+                                                                a#documdfsent-1(href='document.html') Intoduction to algorithms
+                                                            td#statusfsd-1 Reserved
+                                                            td
+                                                                button#retuvxrned-1.btn.btn-dark(type='button')
+                                                                    | Give out
                     // Page Footer
                     footer.main-footer
                         .container-fluid
