@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    /*fetch('http://localhost:8080/kfc')
+                .then((res) => {
+                    res.json().then((data) => {
+                        console.log(data);
+                    });
+                })
+                .catch((err) => {
+                    console.log(err);
+                });*/
+    $.ajax({
+        type: 'GET',
+        data:{"token":"35a4bd2c"},
+        url: 'https://kitapptatar.ru/api/books/all',
+        dataType: 'json',
+        success: function(data) {
+            console.log(data)
+        }
+    });
+</script>
+</body>

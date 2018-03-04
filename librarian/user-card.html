@@ -23,7 +23,9 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/myscripts.js"></script>
+    <![endif]-->
 </head>
 <body>
 <div class="page">
@@ -363,7 +365,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">E-mail</label>
                                     <div class="col-sm-9">
-                                        <label><input type="email" class="form-control" value="e.musk@innopolis.ru" required></label>
+                                        <label><input id="56" type="email" class="form-control" value="e.musk@innopolis.ru" required></label>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -371,7 +373,11 @@
                                     <div class="col-sm-9">
                                         <label><input type="password" name="password" class="form-control" required></label>
                                     </div>
-                                </div>
+                                    <h1 class="header">Candy store</h1>
+                                    <div class="products">
+                                        <div id="">
+                                        </div>
+                                    </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 form-control-label">Telegram alias</label>
                                     <div class="col-sm-9">
@@ -401,15 +407,30 @@
                                 </div>
                                 <div class="form-group row">
                                     <label for="fileInput" class="col-sm-3 form-control-label">Avatar</label>
+                                    <!--<div class="col-sm-9">
+                                        <input id="fileInput" type="file" class="form-control-file" name="sdhjksf">
+                                    </div>-->
+
                                     <div class="col-sm-9">
-                                        <input id="fileInput" type="file" class="form-control-file">
+                                        <a class='btn btn-outline-dark' href='javascript:'>
+                                            Add image...
+                                            <input id="add-image" type="file"
+                                                   style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;'
+                                                   name="file_source" size="40"
+                                                   onchange='$("#upload-file-info").html($(this).val());'>
+                                        </a>
+                                        &nbsp;
+                                        <span class='label label-info' id="upload-file-info"></span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-4 offset-sm-3">
                                         <button type="submit" class="btn btn-secondary">Cancel</button>
-                                        <button type="submit" class="btn btn-primary">Request for changes</button>
+                                        <button id="request_changes" type="submit" class="btn btn-primary">Request for changes</button>
+
+
                                     </div>
+                                    <div id="Content"></div>
                                 </div>
                             </form>
                         </div>
@@ -439,6 +460,7 @@
 
     </div>
 </div>
+<script src="js/myscripts.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="vendor/popper.js/umd/popper.min.js"> </script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

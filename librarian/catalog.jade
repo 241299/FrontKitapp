@@ -1,0 +1,356 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Catalog | Kitapp
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='robots', content='all,follow')
+        // Bootstrap CSS
+        link(rel='stylesheet', href='css/bootstrap.min.css')
+        // Font Awesome CSS
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        // Fontastic Custom icon font
+        link(rel='stylesheet', href='css/fontastic.css')
+        // Google fonts - Poppins
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Poppins:300,400,700')
+        // theme stylesheet
+        link#theme-blue(rel='stylesheet', href='css/style.default.css')
+        // Custom stylesheet - for your changes
+        link(rel='stylesheet', href='css/custom.css')
+        // Favfa fa
+        link(rel='shortcut icon', href='images/favicon.ico')
+        // Tweaks for older IEs
+        //if lt IE 9
+            script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+            script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+            script(src='js/myscripts.js')
+    body
+        .page
+            // Main Navbar
+            header.header
+                nav.navbar
+                    .container-fluid
+                        .navbar-holder.d-flex.align-items-center.justify-content-between
+                            // Navbar Header
+                            .navbar-header
+                                // Navbar Brand
+                                a.navbar-brand(href='catalog.html')
+                                    .brand-text.brand-big
+                                        strong Kitapp
+                                        span LMS
+                                    .brand-text.brand-small
+                                        strong Kitapp
+                                // Toggle Button
+                                a#toggle-btn.menu-btn.active(href='#')
+                                    span
+                                    span
+                                    span
+                            // Navbar Menu
+                            ul.nav-menu.list-unstyled.d-flex.flex-md-row.align-items-md-center
+                                // Notifications
+                                li.nav-item.dropdown
+                                    a#notifications.nav-link(rel='nofollow', data-target='#', href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                        i.fa.fa-bell-o
+                                        span.badge.bg-red 12
+                                    ul.dropdown-menu(aria-labelledby='notifications')
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-envelope.bg-green
+                                                         You
+                                                                                                     have 6 new messages
+                                                    .notification-time
+                                                        small 4 minutes ago
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-twitter.bg-blue
+                                                         You have
+                                                                                                     2 followers
+                                                    .notification-time
+                                                        small 4 minutes ago
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-upload.bg-orange
+                                                         Server
+                                                                                                     Rebooted
+                                                    .notification-time
+                                                        small 4 minutes ago
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-twitter.bg-blue
+                                                         You have
+                                                                                                     2 followers
+                                                    .notification-time
+                                                        small 10 minutes ago
+                                        li
+                                            a.dropdown-item.all-notifications.text-center(rel='nofollow', href='#')
+                                                strong view all notifications
+                                // Logout
+                                li.nav-item
+                                    a#logout.nav-link.logout(href='login.html')
+                                         Logout
+                                        i.fa.fa-sign-out
+            .page-content.d-flex.align-items-stretch
+                // Side Navbar
+                nav.side-navbar
+                    // Sidebar Header
+                    .sidebar-header.d-flex.align-items-center
+                        .avatar
+                            img#sidebar-avatar.img-fluid.rounded-circle(src='images/avatar-1.jpg', alt='...')
+                        .title
+                            h1#sidebar-username.h4 Elon Musk
+                            p#sidebar-usertype Student
+                    // Sidebar Navidation Menus
+                    span.heading Main
+                    ul.list-unstyled
+                        li.active
+                            a(href='catalog.html')
+                                i.fa.fa-book
+                                  Catalog
+                        li
+                            a(href='user-card.html')
+                                i.fa.fa-id-card
+                                  User Card
+                    span.heading Extras
+                    ul.list-unstyled
+                        li
+                            a(href='database.html')
+                                i.fa.fa-database
+                                  Database
+                        li
+                            a(href='readers.html')
+                                i.fa.fa-users
+                                  Readers
+                .content-inner
+                    // Page Header
+                    header.page-header
+                        .container-fluid
+                            h2.no-margin-bottom Catalog
+                    section.preferences
+                        .container-fluid
+                            .row
+                                .col-lg-12
+                                    .card
+                                        .card-header.d-flex.align-items-center
+                                            h3.h4 Preferences
+                                        .card-dropdown
+                                            .dropdown
+                                                button#database-dropdown-menu.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                                    i.fa.fa-ellipsis-v
+                                                .dropdown-menu.dropdown-menu-right.has-shadow(aria-labelledby='database-dropdown-menu')
+                                                    a#add-new-entry.dropdown-item.remove(href='#', data-toggle='modal', data-target='#myModal')
+                                                        i.fa.fa-plus
+                                                         Add new entry
+                                        //
+                                            Trigger the modal with a button
+                                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                                            <!-- Modal
+                                        //
+                                            Trigger the modal with a button
+                                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                                            <!-- Modal
+                                        #myModal.modal.fade
+                                            .modal-dialog(role='document')
+                                                .modal-content
+                                                    .modal-header
+                                                        h5.modal-title Add new book
+                                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                            span(aria-hidden='true') ×
+                                                    .modal-body
+                                                        p Please fill out the info about the new book
+                                                        form
+                                                            .form-group
+                                                                label(for='title') Title
+                                                                input#title.form-control(type='text')
+                                                            .form-group
+                                                                label(for='authors') Authors
+                                                                input#authors.form-control(type='text')
+                                                            .form-group
+                                                                label(for='edition') Edition
+                                                                input#edition.form-control(type='text')
+                                                            .form-group
+                                                                label(for='year') Year
+                                                                input#year.form-control(type='number')
+                                                            .form-group
+                                                                label(for='copies') Copies
+                                                                input#copies.form-control(type='number')
+                                                            .form-group
+                                                                label(for='keywords') Keywords
+                                                                input#keywords.form-control(type='text')
+                                                            .form-group
+                                                                label(for='description') Description
+                                                                textarea#description.form-control(rows='3')
+                                                            .form-group
+                                                                label(for='document-type') Type
+                                                                select#document-type.form-control
+                                                                    option Book
+                                                                    option Article
+                                                                    option Media
+                                                            .form-check
+                                                                label.form-check-label
+                                                                    input#bestseller.form-check-input(type='checkbox')
+                                                                                                                                Bestseller
+                                                            .form-check
+                                                                label.form-check-label
+                                                                    input#reference.form-check-input(type='checkbox')
+                                                                                                                                 Reference material
+                                                            .form-check
+                                                                label.form-check-label
+                                                                    input#not-avaliable.form-check-input(type='checkbox')
+                                                                                                                                 Not available
+                                                            div(style='position:relative;')
+                                                                a.btn.btn-primary(href='javascript:')
+                                                                     Add image...
+                                                                    input#add-image(type='file', style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
+                                                                span#upload-file-info.label.label-info
+                                                    .modal-footer
+                                                        button#save-changes.btn.btn-primary(type='button')
+                                                             Save
+                                                             changes
+                                                        button#close.btn.btn-secondary(type='button', data-dismiss='modal')
+                                                             Close
+                                        .card-body
+                                            .row
+                                                .col-lg-2
+                                                    strong Search by:
+                                                .col-lg-5
+                                                    .i-checks
+                                                        input#search-by-title.checkbox-template(type='checkbox', value='', checked='')
+                                                        label(for='search-by-title') Title
+                                                    .i-checks
+                                                        input#search-by-author.checkbox-template(type='checkbox', value='', checked='')
+                                                        label(for='search-by-author') Author
+                                                    .i-checks
+                                                        input#search-by-type.checkbox-template(type='checkbox', value='', checked='')
+                                                        label(for='search-by-type') Type
+                                            .row
+                                                .col-lg-2
+                                                    strong Sort by:
+                                                .col-lg-2
+                                                    label
+                                                        select.form-control
+                                                            option(value='title') Title
+                                                            option(value='author') Author
+                                                            option(value='type') Type
+                                            .row
+                                                .col-lg-5
+                                                    input.form-control(type='search', placeholder='Documents searching', required='')
+                                                .col-lg-1
+                                                    input.btn(type='submit', value='Search')
+                    section.document
+                        .container-fluid
+                            .card
+                                .card-body
+                                    .row
+                                        .col-lg-2
+                                            #doc-image-1.image.has-shadow
+                                                img.img-fluid(src='images/book1.jpg', alt='...')
+                                        .col-lg-8.m-auto
+                                            h2#title-1 Touch of Class
+                                            h4#author-1 Bertrand Meyer
+                                            small#description-1
+                                                | From object technology pioneer and ETH Zurich professor
+                                                | Bertrand Meyer, winner of the Jolt award
+                                                | and the ACM Software System Award, a revolutionary textbook that makes learning
+                                                | programming fun and rewarding.
+                                                | Meyer builds his presentation on a rich object-oriented software system
+                                                | supporting graphics and multimedia,
+                                                | which students can use to produce impressive applications from day one, then
+                                                | understand inside out
+                                                | as they learn new programming techniques.
+                                            br
+                                            button#document-type-1.btn.btn-sm.bg-blue(type='button') #book
+                                            button#availability-1.btn.btn-sm.bg-green(type='button')
+                                                | #avaliable
+                                            button#bestseller-1.btn.btn-sm.bg-yellow(type='button')
+                                                | #bestseller
+                                        .right-col.col-lg-2.m-auto
+                                            button#details-1.btn.btn-info.book-btn(type='button') DETAILS
+                                            button#request-1.btn.btn-info.book-btn(type='button') REQUEST
+                            .card
+                                .card-body
+                                    .row
+                                        .col-lg-2
+                                            #doc-image-2.image.has-shadow
+                                                img.img-fluid(src='images/book2.jpeg', alt='...')
+                                        .col-lg-8.m-auto
+                                            h2#title-2 Introduction to Algorithms
+                                            h4#author-2
+                                                | Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
+                                                | Stein
+                                            small#description-2
+                                                | 3rd edition, 2009 Introduction to Algorithms is a book
+                                                | by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
+                                                | The first edition of the book was widely used as the textbook for algorithms
+                                                | courses at many universities and
+                                                | is commonly cited as a reference for algorithms in published papers, with over
+                                                | 10000 citations documented on CiteSeerX.
+                                            br
+                                            button#document-type-2.btn.btn-sm.bg-blue(type='button') #book
+                                            button#availability-2.btn.btn-sm.bg-green(type='button')
+                                                | #not_avaliable
+                                            button#bestseller-2.btn.btn-sm.bg-yellow(type='button')
+                                                | #bestseller
+                                        .right-col.col-lg-2.m-auto
+                                            button#details-2.btn.btn-secondary.book-btn(type='button') DETAILS
+                                            button#request-2.btn.btn-info.book-btn(type='button') RESERVE
+                            .card
+                                .card-body
+                                    .row
+                                        .col-lg-2
+                                            #doc-image-3.image.has-shadow
+                                                img.img-fluid(src='images/book3.jpg', alt='...')
+                                        .col-lg-8.m-auto
+                                            h2#title-3 Kolobok
+                                            h4#author-3 Folklor
+                                            small#description-3
+                                                | From object technology pioneer and ETH Zurich professor
+                                                | Bertrand Meyer, winner of the Jolt award
+                                                | and the ACM Software System Award, a revolutionary textbook that makes learning
+                                                | programming fun and rewarding.
+                                                | Meyer builds his presentation on a rich object-oriented software system
+                                                | supporting graphics and multimedia,
+                                                | which students can use to produce impressive applications from day one, then
+                                                | understand inside out
+                                                | as they learn new programming techniques.
+                                            br
+                                            button#document-type-3.btn.btn-sm.bg-blue(type='button') #book
+                                            button#availability-3.btn.btn-sm.bg-green(type='button')
+                                                | #avaliable
+                                            button#bestseller-3.btn.btn-sm.bg-yellow(type='button')
+                                                | #bestseller
+                                        .right-col.col-lg-2.m-auto
+                                            button#details-3.btn.btn-info.book-btn(type='button') DETAILS
+                                            button#request-3.btn.btn-info.book-btn(type='button') RESERVE
+                    // Page Footer
+                    footer.main-footer
+                        .container-fluid
+                            .row
+                                .col-sm-4
+                                    p Kitapp © 2018
+                                .col-sm-4
+                                    p Innopolis University, aud. 504b
+                                .col-sm-4.text-right
+                                    p
+                                        | Design by
+                                        a.external(href='https://bootstrapious.com/admin-templates') Bootstrapious
+                                    // Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)
+        // Javascript files
+        script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+        script(src='vendor/popper.js/umd/popper.min.js')
+        script(src='vendor/bootstrap/js/bootstrap.min.js')
+        script(src='vendor/jquery.cookie/jquery.cookie.js')
+        script(src='vendor/chart.js/Chart.min.js')
+        script(src='vendor/jquery-validation/jquery.validate.min.js')
+        script(src='js/charts-home.js')
+        // Main File
+        script(src='js/front.js')
