@@ -95,12 +95,10 @@
               <p id="sidebar-usertype">Student</p>
             </div>
           </div>
-          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+          <!-- Sidebar Navidation Menus-->
           <ul class="list-unstyled">
             <li class="active"><a href="catalog.html"><i class="fa fa-book"></i>Catalog</a></li>
             <li><a href="user-card.html"><i class="fa fa-id-card"></i>User Card</a></li>
-          </ul><span class="heading">Extras</span>
-          <ul class="list-unstyled">
             <li><a href="database.html"><i class="fa fa-database"></i>Database</a></li>
             <li><a href="readers.html"><i class="fa fa-users"></i>Readers</a></li>
           </ul>
@@ -129,7 +127,7 @@
                         Stein
                       </h4>
                       <h5 id="edition">3rd edition, 2009</h5>
-                      <h6 id="avaliable-copies">Avaliable copies: 3/10</h6>
+                      <h6 id="avaliable-copies">Avaliable copies: 1/3</h6>
                       <h6 id="keywords">Keywords: Programming, algorithms, data structures</h6><br><small id="description">
                         Introduction to Algorithms is a book by Thomas H. Cormen,
                         Charles E.
@@ -198,9 +196,19 @@
                       </div>
                     </div>
                     <div class="form-group row">
+                      <label for="edit-keywords" class="col-2 col-form-label">Keywords</label>
+                      <div class="col-10">
+                        <input id="edit-keywords" type="text" value="it, oop, eiffel" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="edit-description">Description</label>
+                      <textarea id="edit-description" rows="3" class="form-control">Eiffel one love</textarea>
+                    </div>
+                    <div class="form-group row">
                       <label for="edit-copies" class="col-2 col-form-label">Copies</label>
                       <div class="col-5">
-                        <input id="edit-copies" readonly="readonly" type="number" value="10" class="form-control">
+                        <input id="edit-copies" readonly="readonly" type="number" value="3" class="form-control">
                       </div>
                     </div>
                     <div class="form-group row">
@@ -223,7 +231,16 @@
                                 <tr>
                                   <th scope="row">1</th>
                                   <td>73voge8e83</td>
-                                  <td>On hands</td>
+                                  <td> 
+                                    <select id="document-type" class="form-control">
+                                      <option>Available</option>
+                                      <option>Reference</option>
+                                      <option>Reserved</option>
+                                      <option>Loaned</option>
+                                      <option>Maintenance </option>
+                                    </select>
+                                  </td>
+                                  <!--On hands-->
                                   <td>
                                     <button class="btn btn-outline-secondary"><i style="color:crimson" class="fa fa-times"></i></button>
                                   </td>
@@ -231,7 +248,15 @@
                                 <tr>
                                   <th scope="row">2</th>
                                   <td>837980ghhjd</td>
-                                  <td>Available</td>
+                                  <td> 
+                                    <select id="document-type" class="form-control">
+                                      <option>Available</option>
+                                      <option>Reference</option>
+                                      <option>Reserved</option>
+                                      <option>Loaned</option>
+                                      <option>Maintenance </option>
+                                    </select>
+                                  </td>
                                   <td>
                                     <button class="btn btn-outline-secondary"><i style="color:crimson" class="fa fa-times"></i></button>
                                   </td>
@@ -239,7 +264,15 @@
                                 <tr>
                                   <th scope="row">3</th>
                                   <td>4870984hgje</td>
-                                  <td>Not available</td>
+                                  <td> 
+                                    <select id="document-type" class="form-control">
+                                      <option>Available</option>
+                                      <option>Reference</option>
+                                      <option>Reserved</option>
+                                      <option>Loaned</option>
+                                      <option>Maintenance </option>
+                                    </select>
+                                  </td>
                                   <td>
                                     <button class="btn btn-outline-secondary"><i style="color:crimson" class="fa fa-times"></i></button>
                                   </td>
@@ -250,29 +283,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="form-group row">
-                      <label for="edit-keywords" class="col-2 col-form-label">Keywords</label>
-                      <div class="col-10">
-                        <input id="edit-keywords" type="text" value="it, oop, eiffel" class="form-control">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="edit-description">Description</label>
-                      <textarea id="edit-description" rows="3" class="form-control">Eiffel one love</textarea>
-                    </div>
                     <div class="form-check">
                       <label class="form-check-label">
                         <input id="edit-bestseller" type="checkbox" class="form-check-input">                                        Bestseller
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input id="edit-reference" type="checkbox" class="form-check-input">                                        Reference material
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input id="not-avaliable" type="checkbox" class="form-check-input">                                        Not available
                       </label>
                     </div>
                     <div style="position:relative;"><a href="javascript:" class="btn btn-primary">Change image...

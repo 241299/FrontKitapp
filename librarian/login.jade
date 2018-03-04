@@ -48,12 +48,12 @@ html
                                 .content
                                     form#login-form(method='post')
                                         .form-group
-                                            input#login-username.input-material(type='text', name='loginUsername', required='')
-                                            label.label-material(for='login-username') User Name
+                                            input#login-username.input-material(type='email', name='loginUsername', required='')
+                                            label.label-material(for='login-username') E-mail
                                         .form-group
                                             input#login-password.input-material(type='password', name='loginPassword', required='')
                                             label.label-material(for='login-password') Password
-                                        a#login.btn.btn-primary(href='catalog.html') Login
+                                        a#login.btn.btn-primary(href='dashboard.html') Login
                                         // This should be submit button but I replaced it with <a> for demo purposes
                                     a.forgot-pass(href='#') Forgot Password?
                                     br
@@ -61,7 +61,7 @@ html
                                     a.support(href='mailto:it@innopolis.ru') Contact support
             .copyrights.text-center
                 p
-                    | (c) Kitapp, 2018 
+                    | Kitapp, 2018 
                     br
                     |             Design by 
                     a.external(href='https://bootstrapious.com/admin-templates') Bootstrapious

@@ -96,12 +96,10 @@
               <p id="sidebar-usertype">Student</p>
             </div>
           </div>
-          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+          <!-- Sidebar Navidation Menus-->
           <ul class="list-unstyled">
             <li class="active"><a href="catalog.html"><i class="fa fa-book"></i>Catalog</a></li>
             <li><a href="user-card.html"><i class="fa fa-id-card"></i>User Card</a></li>
-          </ul><span class="heading">Extras</span>
-          <ul class="list-unstyled">
             <li><a href="database.html"><i class="fa fa-database"></i>Database</a></li>
             <li><a href="readers.html"><i class="fa fa-users"></i>Readers</a></li>
           </ul>
@@ -124,7 +122,7 @@
                     <div class="card-dropdown">
                       <div class="dropdown">
                         <button id="database-dropdown-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-ellipsis-v"></i></button>
-                        <div aria-labelledby="database-dropdown-menu" class="dropdown-menu dropdown-menu-right has-shadow"><a id="add-new-entry" href="#" data-toggle="modal" data-target="#myModal" class="dropdown-item remove"><i class="fa fa-plus"></i>Add new entry</a></div>
+                        <div aria-labelledby="database-dropdown-menu" class="dropdown-menu dropdown-menu-right has-shadow"><a id="add-new-entry" href="#" data-toggle="modal" data-target="#myModal" class="dropdown-item remove"><i class="fa fa-plus"></i>Add new document</a></div>
                       </div>
                     </div>
                     <!--
@@ -141,31 +139,27 @@
                       <div role="document" class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title">Add new book</h5>
+                            <h5 class="modal-title">Add new document</h5>
                             <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
                           </div>
                           <div class="modal-body">
-                            <p>Please fill out the info about the new book</p>
+                            <p>Please fill out the info about the new document</p>
                             <form>
                               <div class="form-group">
                                 <label for="title">Title</label>
-                                <input id="title" type="text" class="form-control">
+                                <input id="title" type="text" required class="form-control">
                               </div>
                               <div class="form-group">
                                 <label for="authors">Authors</label>
-                                <input id="authors" type="text" class="form-control">
+                                <input id="authors" type="text" required class="form-control">
                               </div>
                               <div class="form-group">
                                 <label for="edition">Edition</label>
-                                <input id="edition" type="text" class="form-control">
+                                <input id="edition" type="text" required class="form-control">
                               </div>
                               <div class="form-group">
                                 <label for="year">Year</label>
                                 <input id="year" type="number" class="form-control">
-                              </div>
-                              <div class="form-group">
-                                <label for="copies">Copies</label>
-                                <input id="copies" type="number" class="form-control">
                               </div>
                               <div class="form-group">
                                 <label for="keywords">Keywords</label>
@@ -179,23 +173,25 @@
                                 <label for="document-type">Type</label>
                                 <select id="document-type" class="form-control">
                                   <option>Book</option>
-                                  <option>Article</option>
                                   <option>Media</option>
+                                  <option>Journal</option>
                                 </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="copies">Avaliable copies</label>
+                                <input id="avaliable-copies" type="number" value="1" required class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label for="copies">Reference copies</label>
+                                <input id="reference-copies" type="number" value="0" required class="form-control">
+                              </div>
+                              <div class="form-group">
+                                <label for="copies">Maintenance copies</label>
+                                <input id="maintenance-copies" type="number" value="0" required class="form-control">
                               </div>
                               <div class="form-check">
                                 <label class="form-check-label">
                                   <input id="bestseller" type="checkbox" class="form-check-input">                                                            Bestseller
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input id="reference" type="checkbox" class="form-check-input">                                                            Reference material
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input id="not-avaliable" type="checkbox" class="form-check-input">                                                            Not available
                                 </label>
                               </div>
                               <div style="position:relative;"><a href="javascript:" class="btn btn-primary">Add image...
@@ -281,8 +277,8 @@
                       <button id="bestseller-1" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
                     </div>
                     <div class="right-col col-lg-2 m-auto">
-                      <button id="details-1" type="button" class="btn btn-info book-btn">DETAILS</button>
-                      <button id="request-1" type="button" class="btn btn-info book-btn">REQUEST</button>
+                      <button id="details-1" type="button" class="btn btn-secondary book-btn">DETAILS</button>
+                      <button id="reserve-1" type="button" class="btn btn-info book-btn">RESERVE</button>
                     </div>
                   </div>
                 </div>
@@ -311,7 +307,7 @@
                     </div>
                     <div class="right-col col-lg-2 m-auto">
                       <button id="details-2" type="button" class="btn btn-secondary book-btn">DETAILS</button>
-                      <button id="request-2" type="button" class="btn btn-info book-btn">RESERVE</button>
+                      <button id="reserve-2" type="button" class="btn btn-info book-btn">RESERVE</button>
                     </div>
                   </div>
                 </div>
@@ -339,7 +335,7 @@
                       <button id="bestseller-3" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
                     </div>
                     <div class="right-col col-lg-2 m-auto">
-                      <button id="details-3" type="button" class="btn btn-info book-btn">DETAILS</button>
+                      <button id="details-3" type="button" class="btn btn-secondary book-btn">DETAILS</button>
                       <button id="request-3" type="button" class="btn btn-info book-btn">RESERVE</button>
                     </div>
                   </div>
