@@ -1,0 +1,336 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Document | Kitapp
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='robots', content='all,follow')
+        // Bootstrap CSS
+        link(rel='stylesheet', href='css/bootstrap.min.css')
+        // Font Awesome CSS
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        // Fontastic Custom icon font
+        link(rel='stylesheet', href='css/fontastic.css')
+        // Google fonts - Poppins
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Poppins:300,400,700')
+        // theme stylesheet
+        link#theme-blue(rel='stylesheet', href='css/style.default.css')
+        // Custom stylesheet - for your changes
+        link(rel='stylesheet', href='css/custom.css')
+        // Favfa fa
+        link(rel='shortcut icon', href='images/favicon.ico')
+        // Tweaks for older IEs
+        //if lt IE 9
+            script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+            script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    body
+        .page
+            // Main Navbar
+            header.header
+                nav.navbar
+                    .container-fluid
+                        .navbar-holder.d-flex.align-items-center.justify-content-between
+                            // Navbar Header
+                            .navbar-header
+                                // Navbar Brand
+                                a.navbar-brand(href='catalog.html')
+                                    .brand-text.brand-big
+                                        strong Kitapp
+                                        span LMS
+                                    .brand-text.brand-small
+                                        strong Kitapp
+                                // Toggle Button
+                                a#toggle-btn.menu-btn.active(href='#')
+                                    span
+                                    span
+                                    span
+                            // Navbar Menu
+                            ul.nav-menu.list-unstyled.d-flex.flex-md-row.align-items-md-center
+                                // Notifications
+                                li.nav-item.dropdown
+                                    a#notifications.nav-link(rel='nofollow', data-target='#', href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                        i.fa.fa-bell-o
+                                        span.badge.bg-red 12
+                                    ul.dropdown-menu(aria-labelledby='notifications')
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-envelope.bg-green
+                                                        | You
+                                                        |                                             have 6 new messages
+                                                    .notification-time
+                                                        small 4 minutes ago
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-twitter.bg-blue
+                                                        | You have
+                                                        |                                             2 followers
+                                                    .notification-time
+                                                        small 4 minutes ago
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-upload.bg-orange
+                                                        | Server
+                                                        |                                             Rebooted
+                                                    .notification-time
+                                                        small 4 minutes ago
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='#')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-twitter.bg-blue
+                                                        | You have
+                                                        |                                             2 followers
+                                                    .notification-time
+                                                        small 10 minutes ago
+                                        li
+                                            a.dropdown-item.all-notifications.text-center(rel='nofollow', href='#')
+                                                strong view all notifications 
+                                // Logout
+                                li.nav-item
+                                    a#logout.nav-link.logout(href='login.html')
+                                        | Logout
+                                        i.fa.fa-sign-out
+            .page-content.d-flex.align-items-stretch
+                // Side Navbar
+                nav.side-navbar
+                    // Sidebar Header
+                    .sidebar-header.d-flex.align-items-center
+                        .avatar
+                            img#sidebar-avatar.img-fluid.rounded-circle(src='images/avatar-1.jpg', alt='...')
+                        .title
+                            h1#sidebar-username.h4 Elon Musk
+                            p#sidebar-usertype Student
+                    // Sidebar Navidation Menus
+                    span.heading Main
+                    ul.list-unstyled
+                        li.active
+                            a(href='catalog.html')
+                                i.fa.fa-book
+                                | Catalog
+                        li
+                            a(href='user-card.html')
+                                i.fa.fa-id-card
+                                | User Card
+                    span.heading Extras
+                    ul.list-unstyled
+                        li
+                            a(href='database.html')
+                                i.fa.fa-database
+                                | Database
+                        li
+                            a(href='readers.html')
+                                i.fa.fa-users
+                                | Readers
+                .content-inner
+                    // Page Header
+                    header.page-header
+                        .container-fluid
+                            h2.no-margin-bottom Catalog / Document
+                    section.document
+                        .container-fluid
+                            .card
+                                .card-header.d-flex.align-items-center
+                                    h3#title.h4 Introduction to Algorithms
+                                .card-body
+                                    .row
+                                        .col-lg-2
+                                            .image.has-shadow
+                                                img#document-image.img-fluid(src='images/book1.jpg', alt='...')
+                                        .col-lg-8.m-auto
+                                            h4#author
+                                                | Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
+                                                | Stein
+                                            h5#edition 3rd edition, 2009
+                                            h6#avaliable-copies Avaliable copies: 3/10
+                                            h6#keywords Keywords: Programming, algorithms, data structures
+                                            br
+                                            small#description
+                                                | Introduction to Algorithms is a book by Thomas H. Cormen,
+                                                | Charles E.
+                                                | Leiserson, Ronald L. Rivest, and Clifford Stein.
+                                                | The first edition of the book was widely used as the textbook for algorithms
+                                                | courses at many universities and
+                                                | is commonly cited as a reference for algorithms in published papers, with
+                                                | over 10000 citations documented on CiteSeerX.
+                                                br
+                                                |                                         In the preface, the authors write about how the book was written to be
+                                                |                                         comprehensive and
+                                                |                                         useful in both teaching and professional environments.
+                                                |                                         Each chapter focuses on an algorithm, and discusses its design techniques and
+                                                |                                         areas of application.
+                                                |                                         Instead of using a specific programming language, the algorithms are written in
+                                                |                                         Pseudocode.
+                                                |                                         The descriptions focus on the aspects of the algorithm itself, its mathematical
+                                                |                                         properties, and emphasize efficiency.
+                                                br
+                                            br
+                                            button#document-type.btn.btn-sm.bg-blue(type='button') #book
+                                            button#availability.btn.btn-sm.bg-green(type='button')
+                                                | #avaliable
+                                            button#bestseller.btn.btn-sm.bg-yellow(type='button')
+                                                | #bestseller
+                                        .right-col.col-lg-2.m-auto
+                                            button#edit.btn.btn-info.book-btn(type='button', data-toggle='modal', data-target='#myModal')
+                                                | EDIT
+                                            button#request.btn.btn-info.book-btn(type='button') REQUEST
+                    //
+                        Trigger the modal with a button
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                        <!-- Modal
+                    #myModal.modal.fade
+                        .modal-dialog(role='document')
+                            .modal-content
+                                .modal-header
+                                    h5.modal-title Update book info
+                                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                .modal-body
+                                    form
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-title') Title
+                                            .col-10
+                                                input#edit-title.form-control(type='text', value='Touch of class')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-authors') Authors
+                                            .col-10
+                                                input#edit-authors.form-control(type='text', value='Bertrand Meyer')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-edition') Edition
+                                            .col-10
+                                                input#edit-edition.form-control(type='text', value='3')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-year') Year
+                                            .col-10
+                                                input#edit-year.form-control(type='number', value='2017')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-copies') Copies
+                                            .col-5
+                                                input#edit-copies.form-control(readonly='readonly', type='number', value='10')
+                                        .form-group.row
+                                            label.col-6.col-form-label(for='edit-copies')
+                                                a(data-toggle='collapse', href='#collapseExample', aria-expanded='false', aria-controls='collapseExample') Show all copies
+                                            .container-fluid
+                                                #collapseExample.collapse
+                                                    .card.card-block
+                                                        table.table.table-striped
+                                                            thead
+                                                                tr
+                                                                    th #
+                                                                    th ID
+                                                                    th Status
+                                                                    td
+                                                                        button.btn.btn-primary
+                                                                            i.fa.fa-plus(style='color:limegreen')
+                                                            tbody
+                                                                tr
+                                                                    th(scope='row') 1
+                                                                    td 73voge8e83
+                                                                    td On hands
+                                                                    td
+                                                                        button.btn.btn-outline-secondary
+                                                                            i.fa.fa-times(style='color:crimson')
+                                                                tr
+                                                                    th(scope='row') 2
+                                                                    td 837980ghhjd
+                                                                    td Available
+                                                                    td
+                                                                        button.btn.btn-outline-secondary
+                                                                            i.fa.fa-times(style='color:crimson')
+                                                                tr
+                                                                    th(scope='row') 3
+                                                                    td 4870984hgje
+                                                                    td Not available
+                                                                    td
+                                                                        button.btn.btn-outline-secondary
+                                                                            i.fa.fa-times(style='color:crimson')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-keywords') Keywords
+                                            .col-10
+                                                input#edit-keywords.form-control(type='text', value='it, oop, eiffel')
+                                        .form-group
+                                            label(for='edit-description') Description
+                                            textarea#edit-description.form-control(rows='3') Eiffel one love
+                                        .form-check
+                                            label.form-check-label
+                                                input#edit-bestseller.form-check-input(type='checkbox')
+                                                |                                         Bestseller
+                                        .form-check
+                                            label.form-check-label
+                                                input#edit-reference.form-check-input(type='checkbox')
+                                                |                                         Reference material
+                                        .form-check
+                                            label.form-check-label
+                                                input#not-avaliable.form-check-input(type='checkbox')
+                                                |                                         Not available
+                                        div(style='position:relative;')
+                                            a.btn.btn-primary(href='javascript:')
+                                                | Change image...
+                                                input#change-image(type='file', style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
+                                            span#upload-file-info.label.label-info
+                                .modal-footer
+                                    button.btn.btn-danger(type='button') Delete
+                                    button.btn.btn-primary(type='button') Save changes
+                                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                            #delInst.modal.fade
+                                .modal-dialog(role='document')
+                                    .modal-content
+                                        .modal-header
+                                            h5.modal-title Modal title
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                span(aria-hidden='true') ×
+                                        .modal-body
+                                            p Modal body text goes here.
+                                        .modal-footer
+                                            button.btn.btn-primary(type='button') Save changes
+                                            button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                    // Page Footer
+                    footer.main-footer
+                        .container-fluid
+                            .row
+                                .col-sm-4
+                                    p Kitapp © 2018
+                                .col-sm-4
+                                    p Innopolis University, aud. 504b
+                                .col-sm-4.text-right
+                                    p
+                                        | Design by 
+                                        a.external(href='https://bootstrapious.com/admin-templates') Bootstrapious
+                                    // Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)
+        script.
+            $(function(){
+            $('#login').popover({
+            placement: 'bottom',
+            title: 'Popover Form',
+            html:true,
+            content:  $('#myForm4').html()
+            }).on('click', function(){
+            // had to put it within the on click action so it grabs the correct info on submit
+            $('#login').click(function(){
+            $('#result').after("form submitted by " + $('#email').val())
+            $.post('/echo/html/',  {
+            email: $('#email').val(),
+            name: $('#name').val(),
+            gender: $('#gender').val()
+            }, function(r){
+            $('#pops').popover('hide')
+            $('#result').html('resonse from server could be here' )
+            })
+            })
+            })
+            })
+        script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+        script(src='vendor/popper.js/umd/popper.min.js')
+        script(src='vendor/bootstrap/js/bootstrap.min.js')
+        script(src='vendor/jquery.cookie/jquery.cookie.js')
+        script(src='vendor/chart.js/Chart.min.js')
+        script(src='vendor/jquery-validation/jquery.validate.min.js')
+        script(src='js/charts-home.js')
+        script(src='js/front.js')

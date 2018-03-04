@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document | Kitapp</title>
@@ -13,418 +13,347 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fontastic Custom icon font-->
     <link rel="stylesheet" href="css/fontastic.css">
-    <!-- Google fonts - Poppins -->
+    <!-- Google fonts - Poppins-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-blue">
+    <link id="theme-blue" rel="stylesheet" href="css/style.default.css">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favfa fa-->
     <link rel="shortcut icon" href="images/favicon.ico">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-</head>
-<body>
-<div class="page">
-    <!-- Main Navbar-->
-    <header class="header">
+    <!-- Tweaks for older IEs-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
+  </head>
+  <body>
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header">
         <nav class="navbar">
-            <div class="container-fluid">
-                <div class="navbar-holder d-flex align-items-center justify-content-between">
-                    <!-- Navbar Header-->
-                    <div class="navbar-header">
-                        <!-- Navbar Brand -->
-                        <a href="catalog.html" class="navbar-brand">
-                            <div class="brand-text brand-big"><strong>Kitapp</strong><span>LMS</span></div>
-                            <div class="brand-text brand-small"><strong>Kitapp</strong></div>
-                        </a>
-                        <!-- Toggle Button-->
-                        <a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
-                    </div>
-                    <!-- Navbar Menu -->
-                    <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                        <!-- Notifications-->
-                        <li class="nav-item dropdown"><a id="notifications" rel="nofollow" data-target="#" href="#"
-                                                         data-toggle="dropdown" aria-haspopup="true"
-                                                         aria-expanded="false" class="nav-link"><i
-                                class="fa fa-bell-o"></i><span class="badge bg-red">12</span></a>
-                            <ul aria-labelledby="notifications" class="dropdown-menu">
-                                <li><a rel="nofollow" href="#" class="dropdown-item">
-                                    <div class="notification">
-                                        <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You
-                                            have 6 new messages
-                                        </div>
-                                        <div class="notification-time">
-                                            <small>4 minutes ago</small>
-                                        </div>
-                                    </div>
-                                </a></li>
-                                <li><a rel="nofollow" href="#" class="dropdown-item">
-                                    <div class="notification">
-                                        <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have
-                                            2 followers
-                                        </div>
-                                        <div class="notification-time">
-                                            <small>4 minutes ago</small>
-                                        </div>
-                                    </div>
-                                </a></li>
-                                <li><a rel="nofollow" href="#" class="dropdown-item">
-                                    <div class="notification">
-                                        <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server
-                                            Rebooted
-                                        </div>
-                                        <div class="notification-time">
-                                            <small>4 minutes ago</small>
-                                        </div>
-                                    </div>
-                                </a></li>
-                                <li><a rel="nofollow" href="#" class="dropdown-item">
-                                    <div class="notification">
-                                        <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have
-                                            2 followers
-                                        </div>
-                                        <div class="notification-time">
-                                            <small>10 minutes ago</small>
-                                        </div>
-                                    </div>
-                                </a></li>
-                                <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
-                                    <strong>view all notifications </strong></a></li>
-                            </ul>
-                        </li>
-                        <!-- Logout    -->
-                        <li class="nav-item">
-                            <a id="logout" href="login.html" class="nav-link logout">Logout<i
-                                    class="fa fa-sign-out"></i></a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand--><a href="catalog.html" class="navbar-brand">
+                  <div class="brand-text brand-big"><strong>Kitapp</strong><span>LMS</span></div>
+                  <div class="brand-text brand-small"><strong>Kitapp</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu-->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Notifications-->
+                <li class="nav-item dropdown"><a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red">12</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You
+                                                                        have 6 new messages
+                          </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have
+                                                                        2 followers
+                          </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-upload bg-orange"></i>Server
+                                                                        Rebooted
+                          </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-twitter bg-blue"></i>You have
+                                                                        2 followers
+                          </div>
+                          <div class="notification-time"><small>10 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"><strong>view all notifications </strong></a></li>
+                  </ul>
+                </li>
+                <!-- Logout-->
+                <li class="nav-item"><a id="logout" href="login.html" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+              </ul>
             </div>
+          </div>
         </nav>
-    </header>
-    <div class="page-content d-flex align-items-stretch">
-        <!-- Side Navbar -->
+      </header>
+      <div class="page-content d-flex align-items-stretch">
+        <!-- Side Navbar-->
         <nav class="side-navbar">
-            <!-- Sidebar Header-->
-            <div class="sidebar-header d-flex align-items-center">
-                <div class="avatar"><img id="sidebar-avatar" src="images/avatar-1.jpg" alt="..."
-                                         class="img-fluid rounded-circle"></div>
-                <div class="title">
-                    <h1 id="sidebar-username" class="h4">Elon Musk</h1>
-                    <p id="sidebar-usertype">Student</p>
-                </div>
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><img id="sidebar-avatar" src="images/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="title">
+              <h1 id="sidebar-username" class="h4">Elon Musk</h1>
+              <p id="sidebar-usertype">Student</p>
             </div>
-            <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
-            <ul class="list-unstyled">
-                <li class="active"><a href="catalog.html"> <i class="fa fa-book"></i>Catalog </a></li>
-                <li><a href="user-card.html"> <i class="fa fa-id-card"></i>User Card </a></li>
-            </ul>
-            <span class="heading">Extras</span>
-            <ul class="list-unstyled">
-                <li><a href="database.html"> <i class="fa fa-database"></i>Database </a></li>
-                <li><a href="readers.html"> <i class="fa fa-users"></i>Readers </a></li>
-            </ul>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+          <ul class="list-unstyled">
+            <li class="active"><a href="catalog.html"><i class="fa fa-book"></i>Catalog</a></li>
+            <li><a href="user-card.html"><i class="fa fa-id-card"></i>User Card</a></li>
+          </ul><span class="heading">Extras</span>
+          <ul class="list-unstyled">
+            <li><a href="database.html"><i class="fa fa-database"></i>Database</a></li>
+            <li><a href="readers.html"><i class="fa fa-users"></i>Readers</a></li>
+          </ul>
         </nav>
         <div class="content-inner">
-            <!-- Page Header-->
-            <header class="page-header">
-                <div class="container-fluid">
-                    <h2 class="no-margin-bottom">Catalog / Document</h2>
-                </div>
-            </header>
-
-            <section class="document">
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center">
-                            <h3 id="title" class="h4">Introduction to Algorithms</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class=" col-lg-2">
-                                    <div class="image has-shadow">
-                                        <img id="document-image" src="images/book1.jpg" alt="..." class="img-fluid">
-                                    </div>
-                                </div>
-                                <div class="col-lg-8  m-auto">
-                                    <h4 id="author">Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
-                                        Stein</h4>
-                                    <h5 id="edition">3rd edition, 2009</h5>
-                                    <h6 id="avaliable-copies">Avaliable copies: 3/10</h6>
-                                    <h6 id="keywords">Keywords: Programming, algorithms, data structures</h6>
-                                    <br>
-                                    <small id="description">Introduction to Algorithms is a book by Thomas H. Cormen,
-                                        Charles E.
-                                        Leiserson, Ronald L. Rivest, and Clifford Stein.
-                                        The first edition of the book was widely used as the textbook for algorithms
-                                        courses at many universities and
-                                        is commonly cited as a reference for algorithms in published papers, with
-                                        over 10000 citations documented on CiteSeerX.<br>
-                                        In the preface, the authors write about how the book was written to be
-                                        comprehensive and
-                                        useful in both teaching and professional environments.
-                                        Each chapter focuses on an algorithm, and discusses its design techniques and
-                                        areas of application.
-                                        Instead of using a specific programming language, the algorithms are written in
-                                        Pseudocode.
-                                        The descriptions focus on the aspects of the algorithm itself, its mathematical
-                                        properties, and emphasize efficiency.
-                                        <br>
-                                    </small>
-                                    <br>
-                                    <button id="document-type" type="button" class="btn btn-sm bg-blue">#book</button>
-                                    <button id="availability" type="button" class="btn btn-sm bg-green">#avaliable
-                                    </button>
-                                    <button id="bestseller" type="button" class="btn btn-sm bg-yellow">#bestseller
-                                    </button>
-                                </div>
-                                <div class="right-col col-lg-2 m-auto">
-                                    <button id="edit" type="button" class="btn btn-info book-btn" data-toggle="modal"
-                                            data-target="#myModal">EDIT
-                                    </button>
-                                    <button id="request" type="button" class="btn btn-info book-btn">REQUEST</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Trigger the modal with a button
-                                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                                            <!-- Modal -->
-
-
-            <div class="modal fade" id="myModal">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Update book info</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group row">
-                                    <label for="edit-title" class="col-2 col-form-label">Title</label>
-                                    <div class="col-10">
-                                        <input class="form-control" type="text" value="Touch of class" id="edit-title">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="edit-authors" class="col-2 col-form-label">Authors</label>
-                                    <div class="col-10">
-                                        <input class="form-control" type="text" value="Bertrand Meyer"
-                                               id="edit-authors">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="edit-edition" class="col-2 col-form-label">Edition</label>
-                                    <div class="col-10">
-                                        <input class="form-control" type="text" value="3" id="edit-edition">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="edit-year" class="col-2 col-form-label">Year</label>
-                                    <div class="col-10">
-                                        <input class="form-control" type="number" value="2017" id="edit-year">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="edit-copies"  class="col-2 col-form-label">Copies</label>
-                                    <div class="col-5">
-                                        <input  readonly="readonly" class="form-control" type="number" value="10" id="edit-copies">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="edit-copies" class=" col-6 col-form-label"><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show all copies</a></label>
-                                    <div class="container-fluid">
-                                    <div class="collapse" id="collapseExample">
-                                        <div class="card card-block">
-                                            <table class="table table-striped">
-                                                <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>ID</th>
-                                                    <th>Status</th>
-                                                    <td><button class="btn btn-primary"><i class="fa fa-plus" style="color:limegreen"></i></button></td>
-
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>73voge8e83</td>
-                                                    <td>On hands</td>
-                                                    <td><button class="btn btn-outline-secondary"><i class="fa fa-times" style="color:crimson"></i></button></td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>837980ghhjd</td>
-                                                    <td>Available</td>
-                                                    <td><button class="btn btn-outline-secondary"><i class="fa fa-times" style="color:crimson"></i></button></td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>4870984hgje</td>
-                                                    <td>Not available</td>
-                                                    <td><button class="btn btn-outline-secondary"><i class="fa fa-times" style="color:crimson"></i></button></td>
-
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                            </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                    <div class="form-group row">
-                                    <label for="edit-keywords" class="col-2 col-form-label">Keywords</label>
-                                    <div class="col-10">
-                                        <input class="form-control" type="text" value="it, oop, eiffel"
-                                               id="edit-keywords">
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="edit-description">Description</label>
-                                    <textarea class="form-control" id="edit-description"
-                                              rows="3">Eiffel one love</textarea>
-                                </div>
-
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input id="edit-bestseller" type="checkbox" class="form-check-input">
-                                        Bestseller
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input id="edit-reference" type="checkbox" class="form-check-input">
-                                        Reference material
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input id="not-avaliable" type="checkbox" class="form-check-input">
-                                        Not available
-                                    </label>
-                                </div>
-
-                                <div style="position:relative;">
-                                    <a class='btn btn-primary' href='javascript:'>
-                                        Change image...
-                                        <input id="change-image" type="file"
-                                               style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;'
-                                               name="file_source" size="40"
-                                               onchange='$("#upload-file-info").html($(this).val());'>
-                                    </a>
-                                    &nbsp;
-                                    <span class='label label-info' id="upload-file-info"></span>
-                                </div>
-
-
-                            </form>
-
-
-                        </div>
-
-
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger">Delete</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-
-                    <div class="modal fade" id="delInst">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Modal body text goes here.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Page Header-->
+          <header class="page-header">
+            <div class="container-fluid">
+              <h2 class="no-margin-bottom">Catalog / Document</h2>
             </div>
-
-
-            <!-- Page Footer-->
-            <footer class="main-footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p>Kitapp &copy; 2018</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <p>Innopolis University, aud. 504b</p>
-                        </div>
-                        <div class="col-sm-4 text-right">
-                            <p>Design by <a href="https://bootstrapious.com/admin-templates"
-                                            class="external">Bootstrapious</a>
-                            </p>
-                            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-                        </div>
-                    </div>
+          </header>
+          <section class="document">
+            <div class="container-fluid">
+              <div class="card">
+                <div class="card-header d-flex align-items-center">
+                  <h3 id="title" class="h4">Introduction to Algorithms</h3>
                 </div>
-            </footer>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <div class="image has-shadow"><img id="document-image" src="images/book1.jpg" alt="..." class="img-fluid"></div>
+                    </div>
+                    <div class="col-lg-8 m-auto">
+                      <h4 id="author">
+                        Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
+                        Stein
+                      </h4>
+                      <h5 id="edition">3rd edition, 2009</h5>
+                      <h6 id="avaliable-copies">Avaliable copies: 3/10</h6>
+                      <h6 id="keywords">Keywords: Programming, algorithms, data structures</h6><br><small id="description">
+                        Introduction to Algorithms is a book by Thomas H. Cormen,
+                        Charles E.
+                        Leiserson, Ronald L. Rivest, and Clifford Stein.
+                        The first edition of the book was widely used as the textbook for algorithms
+                        courses at many universities and
+                        is commonly cited as a reference for algorithms in published papers, with
+                        over 10000 citations documented on CiteSeerX.<br>                                        In the preface, the authors write about how the book was written to be
+                                                                comprehensive and
+                                                                useful in both teaching and professional environments.
+                                                                Each chapter focuses on an algorithm, and discusses its design techniques and
+                                                                areas of application.
+                                                                Instead of using a specific programming language, the algorithms are written in
+                                                                Pseudocode.
+                                                                The descriptions focus on the aspects of the algorithm itself, its mathematical
+                                                                properties, and emphasize efficiency.<br></small><br>
+                      <button id="document-type" type="button" class="btn btn-sm bg-blue">#book</button>
+                      <button id="availability" type="button" class="btn btn-sm bg-green">#avaliable</button>
+                      <button id="bestseller" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
+                    </div>
+                    <div class="right-col col-lg-2 m-auto">
+                      <button id="edit" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info book-btn">EDIT</button>
+                      <button id="request" type="button" class="btn btn-info book-btn">REQUEST</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--
+          Trigger the modal with a button
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+          <!-- Modal
+          -->
+          <div id="myModal" class="modal fade">
+            <div role="document" class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Update book info</h5>
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="edit-title" class="col-2 col-form-label">Title</label>
+                      <div class="col-10">
+                        <input id="edit-title" type="text" value="Touch of class" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="edit-authors" class="col-2 col-form-label">Authors</label>
+                      <div class="col-10">
+                        <input id="edit-authors" type="text" value="Bertrand Meyer" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="edit-edition" class="col-2 col-form-label">Edition</label>
+                      <div class="col-10">
+                        <input id="edit-edition" type="text" value="3" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="edit-year" class="col-2 col-form-label">Year</label>
+                      <div class="col-10">
+                        <input id="edit-year" type="number" value="2017" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="edit-copies" class="col-2 col-form-label">Copies</label>
+                      <div class="col-5">
+                        <input id="edit-copies" readonly="readonly" type="number" value="10" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="edit-copies" class="col-6 col-form-label"><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show all copies</a></label>
+                      <div class="container-fluid">
+                        <div id="collapseExample" class="collapse">
+                          <div class="card card-block">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>ID</th>
+                                  <th>Status</th>
+                                  <td>
+                                    <button class="btn btn-primary"><i style="color:limegreen" class="fa fa-plus"></i></button>
+                                  </td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>73voge8e83</td>
+                                  <td>On hands</td>
+                                  <td>
+                                    <button class="btn btn-outline-secondary"><i style="color:crimson" class="fa fa-times"></i></button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>837980ghhjd</td>
+                                  <td>Available</td>
+                                  <td>
+                                    <button class="btn btn-outline-secondary"><i style="color:crimson" class="fa fa-times"></i></button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>4870984hgje</td>
+                                  <td>Not available</td>
+                                  <td>
+                                    <button class="btn btn-outline-secondary"><i style="color:crimson" class="fa fa-times"></i></button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="edit-keywords" class="col-2 col-form-label">Keywords</label>
+                      <div class="col-10">
+                        <input id="edit-keywords" type="text" value="it, oop, eiffel" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="edit-description">Description</label>
+                      <textarea id="edit-description" rows="3" class="form-control">Eiffel one love</textarea>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input id="edit-bestseller" type="checkbox" class="form-check-input">                                        Bestseller
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input id="edit-reference" type="checkbox" class="form-check-input">                                        Reference material
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input id="not-avaliable" type="checkbox" class="form-check-input">                                        Not available
+                      </label>
+                    </div>
+                    <div style="position:relative;"><a href="javascript:" class="btn btn-primary">Change image...
+                        <input id="change-image" type="file" style="position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:&quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=0)&quot;;opacity:0;background-color:transparent;color:transparent;" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"></a><span id="upload-file-info" class="label label-info"></span></div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                </div>
+              </div>
+              <div id="delInst" class="modal fade">
+                <div role="document" class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Page Footer-->
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <p>Kitapp © 2018</p>
+                </div>
+                <div class="col-sm-4">
+                  <p>Innopolis University, aud. 504b</p>
+                </div>
+                <div class="col-sm-4 text-right">
+                  <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+                  <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
+      </div>
     </div>
-</div>
-
-<script>
-    $(function(){
-        $('#login').popover({
-
-            placement: 'bottom',
-            title: 'Popover Form',
-            html:true,
-            content:  $('#myForm4').html()
-        }).on('click', function(){
-            // had to put it within the on click action so it grabs the correct info on submit
-            $('#login').click(function(){
-                $('#result').after("form submitted by " + $('#email').val())
-                $.post('/echo/html/',  {
-                    email: $('#email').val(),
-                    name: $('#name').val(),
-                    gender: $('#gender').val()
-                }, function(r){
-                    $('#pops').popover('hide')
-                    $('#result').html('resonse from server could be here' )
-                })
-            })
-        })
-    })
-
-</script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="vendor/popper.js/umd/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="vendor/jquery.cookie/jquery.cookie.js"></script>
-<script src="vendor/chart.js/Chart.min.js"></script>
-<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
-<script src="js/charts-home.js"></script>
-<script src="js/front.js"></script>
-</body>
+    <script>
+      $(function(){
+      $('#login').popover({
+      placement: 'bottom',
+      title: 'Popover Form',
+      html:true,
+      content:  $('#myForm4').html()
+      }).on('click', function(){
+      // had to put it within the on click action so it grabs the correct info on submit
+      $('#login').click(function(){
+      $('#result').after("form submitted by " + $('#email').val())
+      $.post('/echo/html/',  {
+      email: $('#email').val(),
+      name: $('#name').val(),
+      gender: $('#gender').val()
+      }, function(r){
+      $('#pops').popover('hide')
+      $('#result').html('resonse from server could be here' )
+      })
+      })
+      })
+      })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <script src="js/front.js"></script>
+  </body>
 </html>
