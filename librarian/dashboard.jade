@@ -109,8 +109,11 @@ html
                             h1#sidebar-username.h4 Elon Musk
                             p#sidebar-usertype Student
                     // Sidebar Navidation Menus
-                    span.heading Main
                     ul.list-unstyled
+                        li.active
+                            a(href='dashboard.html')
+                                i.fa.fa-dashboard
+                                | Dashboard
                         li
                             a(href='catalog.html')
                                 i.fa.fa-book
@@ -119,8 +122,6 @@ html
                             a(href='user-card.html')
                                 i.fa.fa-id-card
                                 | User Card
-                    span.heading Extras
-                    ul.list-unstyled
                         li
                             a(href='database.html')
                                 i.fa.fa-database

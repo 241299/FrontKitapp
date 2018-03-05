@@ -109,8 +109,11 @@ html
                             h1#sidebar-username.h4 Elon Musk
                             p#sidebar-usertype Student
                     // Sidebar Navidation Menus
-                    span.heading Main
                     ul.list-unstyled
+                        li
+                            a(href='dashboard.html')
+                                i.fa.fa-dashboard
+                                | Dashboard
                         li.active
                             a(href='catalog.html')
                                 i.fa.fa-book
@@ -119,8 +122,6 @@ html
                             a(href='user-card.html')
                                 i.fa.fa-id-card
                                 | User Card
-                    span.heading Extras
-                    ul.list-unstyled
                         li
                             a(href='database.html')
                                 i.fa.fa-database
@@ -149,7 +150,7 @@ html
                                                 | Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
                                                 | Stein
                                             h5#edition 3rd edition, 2009
-                                            h6#avaliable-copies Avaliable copies: 3/10
+                                            h6#avaliable-copies Avaliable copies: 1/3
                                             h6#keywords Keywords: Programming, algorithms, data structures
                                             br
                                             small#description
@@ -211,9 +212,16 @@ html
                                             .col-10
                                                 input#edit-year.form-control(type='number', value='2017')
                                         .form-group.row
+                                            label.col-2.col-form-label(for='edit-keywords') Keywords
+                                            .col-10
+                                                input#edit-keywords.form-control(type='text', value='it, oop, eiffel')
+                                        .form-group
+                                            label(for='edit-description') Description
+                                            textarea#edit-description.form-control(rows='3') Eiffel one love
+                                        .form-group.row
                                             label.col-2.col-form-label(for='edit-copies') Copies
                                             .col-5
-                                                input#edit-copies.form-control(readonly='readonly', type='number', value='10')
+                                                input#edit-copies.form-control(readonly='readonly', type='number', value='3')
                                         .form-group.row
                                             label.col-6.col-form-label(for='edit-copies')
                                                 a(data-toggle='collapse', href='#collapseExample', aria-expanded='false', aria-controls='collapseExample') Show all copies
@@ -233,43 +241,47 @@ html
                                                                 tr
                                                                     th(scope='row') 1
                                                                     td 73voge8e83
-                                                                    td On hands
+                                                                    td 
+                                                                        select#document-type.form-control
+                                                                            option Available
+                                                                            option Reference
+                                                                            option Reserved
+                                                                            option Loaned
+                                                                            option Maintenance 
+                                                                    //On hands
                                                                     td
                                                                         button.btn.btn-outline-secondary
                                                                             i.fa.fa-times(style='color:crimson')
                                                                 tr
                                                                     th(scope='row') 2
                                                                     td 837980ghhjd
-                                                                    td Available
+                                                                    td 
+                                                                        select#document-type.form-control
+                                                                            option Available
+                                                                            option Reference
+                                                                            option Reserved
+                                                                            option Loaned
+                                                                            option Maintenance 
                                                                     td
                                                                         button.btn.btn-outline-secondary
                                                                             i.fa.fa-times(style='color:crimson')
                                                                 tr
                                                                     th(scope='row') 3
                                                                     td 4870984hgje
-                                                                    td Not available
+                                                                    td 
+                                                                        select#document-type.form-control
+                                                                            option Available
+                                                                            option Reference
+                                                                            option Reserved
+                                                                            option Loaned
+                                                                            option Maintenance 
                                                                     td
                                                                         button.btn.btn-outline-secondary
                                                                             i.fa.fa-times(style='color:crimson')
-                                        .form-group.row
-                                            label.col-2.col-form-label(for='edit-keywords') Keywords
-                                            .col-10
-                                                input#edit-keywords.form-control(type='text', value='it, oop, eiffel')
-                                        .form-group
-                                            label(for='edit-description') Description
-                                            textarea#edit-description.form-control(rows='3') Eiffel one love
                                         .form-check
                                             label.form-check-label
                                                 input#edit-bestseller.form-check-input(type='checkbox')
                                                 |                                         Bestseller
-                                        .form-check
-                                            label.form-check-label
-                                                input#edit-reference.form-check-input(type='checkbox')
-                                                |                                         Reference material
-                                        .form-check
-                                            label.form-check-label
-                                                input#not-avaliable.form-check-input(type='checkbox')
-                                                |                                         Not available
                                         div(style='position:relative;')
                                             a.btn.btn-primary(href='javascript:')
                                                 | Change image...
