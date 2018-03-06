@@ -36,7 +36,7 @@ mixin sidebar_list_item(href, icon, active_item)
 
 
 mixin main-navbar()
-    header.header
+            header.header
                 nav.navbar
                     .container-fluid
                         .navbar-holder.d-flex.align-items-center.justify-content-between
@@ -132,17 +132,17 @@ mixin head(page_title)
 
 mixin footer()
     footer.main-footer
-                        .container-fluid
-                            .row
-                                .col-sm-4
-                                    p Kitapp © 2018
-                                .col-sm-4
-                                    p Innopolis University, aud. 504b
-                                .col-sm-4.text-right
-                                    p
-                                        | Design by 
-                                        a.external(href='https://bootstrapious.com/admin-templates') Bootstrapious
-                                    // Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)
+        .container-fluid
+            .row
+                .col-sm-4
+                    p Kitapp © 2018
+                .col-sm-4
+                    p Innopolis University, aud. 504b
+                .col-sm-4.text-right
+                    p
+                        | Design by 
+                        a.external(href='https://bootstrapious.com/admin-templates') Bootstrapious
+                        // Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)
 
 
 mixin java-script()
@@ -156,3 +156,66 @@ mixin java-script()
     script(src='js/charts-home.js')
     // Main File
     script(src='js/front.js')
+
+
+mixin reader-row(id, name, surname, type, email, telegram)
+    tr
+        th#id(scope='row')
+            a(href='user-card.html') #{id}
+        th#name #{name}
+        th#surname #{surname}
+        td#type #{type}
+        td#e-mail #{email}
+        td#telegram #{telegram}
+        td#actions
+            button.btn.btn-dark(type='button', data-toggle='modal', data-target='#myModal2') Edit
+
+mixin catalog-document(title, author, description, type, avaliable, bestseller, image)
+    .card
+        .card-body
+            .row
+                .col-lg-2
+                    #doc-image.image.has-shadow
+                        img.img-fluid(src='images/#{image}', alt='...')
+                .col-lg-8.m-auto
+                    h2#title #{title}
+                    h4#author #{author}
+                    small#description #{description}
+                    br
+                    button#document-type.btn.btn-sm.bg-blue(type='button') ##{type}
+                    button#availability.btn.btn-sm.bg-green(type='button') ##{avaliable}
+                    button#bestseller.btn.btn-sm.bg-yellow(type='button') ##{bestseller}
+                .right-col.col-lg-2.m-auto
+                    a(href="document.html")
+                        button#details.btn.btn-secondary.book-btn(href="document.html" type='button') DETAILS
+                    button#reserve.btn.btn-info.book-btn(type='button') RESERVE
+
+mixin user-card-row(row_number, title, author, type, status)
+    tr
+        th#row-number(scope='row') #{row_number}
+        th#title
+            a(href='document.html') #{title}
+        td#author #{author}
+        td#type #{type}
+        td#status #{status}
+
+mixin database-row(id, name, surname, type, title, status)
+    tr
+        th#row(scope='row')
+            a(href='user-card.html') #{id}
+        th#name #{name}
+        th#surname #{surname}
+        td#user-type #{type}
+        td
+            a#document(href='document.html') #{title}
+        td#status #{status}
+        td
+            if status=="Reserved"
+                button#give-out.btn.btn-dark(type='button') Give out
+            else if status=="Returned"
+                button#give-out.btn.btn-dark(type='button') Prolong
+            else
+                button#returned.btn.btn-success(type='button') Return
+                button#outstanding-request.btn.btn-warning(type='button') Request
+                block
+            

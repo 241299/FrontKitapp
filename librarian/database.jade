@@ -43,66 +43,10 @@ html
                                                             th#status-0 Status
                                                             th#actions-0 Actions
                                                     tbody
-                                                        tr
-                                                            th#row-1(scope='row')
-                                                                a(href='user-card.html') 12345354
-                                                            th
-                                                                a#name-1 Elon
-                                                            th
-                                                                a#surname-1 Musk
-                                                            td#user-type-1 Student
-                                                            td
-                                                                a#document-1(href='document.html') Intoduction to algorithms
-                                                            td#status-1 Due 05.03
-                                                            td
-                                                                button#returned-1.btn.btn-success(type='button')
-                                                                    | Return
-                                                                p
-                                                                button#outstanding-request-1.btn.btn-warning(type='button')
-                                                                    | Outstanding request
-                                                        tr
-                                                            th#row-2(scope='row')
-                                                                a(href='user-card.html') 12334554
-                                                            th
-                                                                a#name-2 Steve
-                                                            th
-                                                                a#surname-2 Jobs
-                                                            td#user-type-2 Student
-                                                            td
-                                                                a#document-2(href='document.html') Intoduction to algorithms
-                                                            td#status-2 Due 05.03
-                                                            td
-                                                                button#returned-2.btn.btn-success(type='button')
-                                                                    | Return
-                                                                p
-                                                                button#outstanding-request-2.btn.btn-warning(type='button')
-                                                                    | Outstanding request
-                                                        tr
-                                                            th#row-3(scope='row')
-                                                                a(href='user-card.html') 12354
-                                                            th
-                                                                a#name-3 Charles
-                                                            th
-                                                                a#surname-3 Darwin
-                                                            td#user-type-3 Faculty
-                                                            td
-                                                                a#document-3(href='document.html') Intoduction to algorithms
-                                                            td#status-3 Returned
-                                                            td
-                                                        tr
-                                                            th#row-1afe(scope='row')
-                                                                a(href='user-card.html') 12345354
-                                                            th
-                                                                a#name-1fs Elon
-                                                            th
-                                                                a#surnadfsme-1 Musk
-                                                            td#user-typdfse-1 Student
-                                                            td
-                                                                a#documdfsent-1(href='document.html') Intoduction to algorithms
-                                                            td#statusfsd-1 Reserved
-                                                            td
-                                                                button#retuvxrned-1.btn.btn-dark(type='button')
-                                                                    | Give out
+                                                        +database-row("124123", "Elon", "Musk", "Student", "Intoduction to algorithms", "Due 05.03")
+                                                        +database-row("224123", "Steve", "Jobs", "Student", "Intoduction to algorithms", "Due 05.03")
+                                                        +database-row("004123", "Charles", "Darwin", "Faculty", "Intoduction to algorithms", "Returned")
+                                                        +database-row("000125", "Elon", "Musk", "Student", "Introduction to algorithms", "Reserved")
                     // Page Footer
                     +footer()
         // Javascript files

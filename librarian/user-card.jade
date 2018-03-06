@@ -30,10 +30,6 @@ html
                                                     button#add-new-entry.dropdown-item.remove(type='button', href='#', data-toggle='modal', data-target='#myModal')
                                                         i.fa.fa-plus
                                                         | Add new entry
-                                                    //
-                                                        Trigger the modal with a button
-                                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                                                        <!-- Modal
                                         #myModal.modal.fade
                                             .modal-dialog(role='document')
                                                 .modal-content
@@ -77,27 +73,9 @@ html
                                                             th#type-0 Type
                                                             th#status-0 Status
                                                     tbody
-                                                        tr
-                                                            th#row-number-1(scope='row') 1
-                                                            th#title-1
-                                                                a(href='document.html') Touch of Class
-                                                            td#author-1 Bertrand Meyer
-                                                            td#type-1 Book
-                                                            td#status-1 Due 06.03.2018
-                                                        tr
-                                                            th#row-number-2(scope='row') 2
-                                                            th#title-2
-                                                                a(href='document.html') Captain's daughter
-                                                            td#author-2 Alexander S. Pushkin
-                                                            td#type-2 Book
-                                                            td#status-2 Due 06.03.2018
-                                                        tr
-                                                            th#row-number-3(scope='row') 3
-                                                            th#title-3
-                                                                a(href='document.html') Kolobok
-                                                            td#author-3 Folklor
-                                                            td#type-3 Book
-                                                            td#status-3 Returned 01.01.2018
+                                                        +user-card-row("1", "Touch of Class", "Bertrand Meyer", "Book", "Due 06.03.2018")
+                                                        +user-card-row("2", "Captain's daughter", "Alexander S. Pushkin", "Book", "Due 06.03.2018")
+                                                        +user-card-row("3", "Kolobok", "Folklor", "Book", "Returned 01.01.2018")
                     section.tables
                         .container-fluid
                             .card

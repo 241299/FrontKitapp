@@ -227,7 +227,7 @@
                                 <tr>
                                   <th scope="row">1</th>
                                   <td>73voge8e83</td>
-                                  <td> 
+                                  <td>
                                     <select id="document-type" class="form-control">
                                       <option>Available</option>
                                       <option>Reference</option>
@@ -244,7 +244,7 @@
                                 <tr>
                                   <th scope="row">2</th>
                                   <td>837980ghhjd</td>
-                                  <td> 
+                                  <td>
                                     <select id="document-type" class="form-control">
                                       <option>Available</option>
                                       <option>Reference</option>
@@ -260,7 +260,7 @@
                                 <tr>
                                   <th scope="row">3</th>
                                   <td>4870984hgje</td>
-                                  <td> 
+                                  <td>
                                     <select id="document-type" class="form-control">
                                       <option>Available</option>
                                       <option>Reference</option>
@@ -324,9 +324,10 @@
                   <p>Innopolis University, aud. 504b</p>
                 </div>
                 <div class="col-sm-4 text-right">
-                  <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
-                  <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-                  
+                  <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a>
+                    <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                    
+                  </p>
                 </div>
               </div>
             </div>
@@ -335,26 +336,26 @@
       </div>
     </div>
     <script>
-      $(function(){
-      $('#login').popover({
-      placement: 'bottom',
-      title: 'Popover Form',
-      html:true,
-      content:  $('#myForm4').html()
-      }).on('click', function(){
-      // had to put it within the on click action so it grabs the correct info on submit
-      $('#login').click(function(){
-      $('#result').after("form submitted by " + $('#email').val())
-      $.post('/echo/html/',  {
-      email: $('#email').val(),
-      name: $('#name').val(),
-      gender: $('#gender').val()
-      }, function(r){
-      $('#pops').popover('hide')
-      $('#result').html('resonse from server could be here' )
-      })
-      })
-      })
+      $(function () {
+          $('#login').popover({
+              placement: 'bottom',
+              title: 'Popover Form',
+              html: true,
+              content: $('#myForm4').html()
+          }).on('click', function () {
+              // had to put it within the on click action so it grabs the correct info on submit
+              $('#login').click(function () {
+                  $('#result').after("form submitted by " + $('#email').val())
+                  $.post('/echo/html/', {
+                      email: $('#email').val(),
+                      name: $('#name').val(),
+                      gender: $('#gender').val()
+                  }, function (r) {
+                      $('#pops').popover('hide')
+                      $('#result').html('resonse from server could be here')
+                  })
+              })
+          })
       })
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

@@ -120,16 +120,6 @@
                         <div aria-labelledby="database-dropdown-menu" class="dropdown-menu dropdown-menu-right has-shadow"><a id="add-new-entry" href="#" data-toggle="modal" data-target="#myModal" class="dropdown-item remove"><i class="fa fa-plus"></i>Add new document</a></div>
                       </div>
                     </div>
-                    <!--
-                    Trigger the modal with a button
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                    <!-- Modal
-                    -->
-                    <!--
-                    Trigger the modal with a button
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                    <!-- Modal
-                    -->
                     <div id="myModal" class="modal fade">
                       <div role="document" class="modal-dialog">
                         <div class="modal-content">
@@ -186,7 +176,7 @@
                               </div>
                               <div class="form-check">
                                 <label class="form-check-label">
-                                  <input id="bestseller" type="checkbox" class="form-check-input">                                                            Bestseller
+                                  <input id="bestseller" type="checkbox" class="form-check-input">Bestseller
                                 </label>
                               </div>
                               <div style="position:relative;"><a href="javascript:" class="btn btn-primary">Add image...
@@ -194,10 +184,7 @@
                             </form>
                           </div>
                           <div class="modal-footer">
-                            <button id="save-changes" type="button" class="btn btn-primary">
-                              Save
-                              changes
-                            </button>
+                            <button id="save-changes" type="button" class="btn btn-primary">Save changes</button>
                             <button id="close" type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
                           </div>
                         </div>
@@ -253,27 +240,18 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-lg-2">
-                      <div id="doc-image-1" class="image has-shadow"><img src="images/book1.jpg" alt="..." class="img-fluid"></div>
+                      <div id="doc-image" class="image has-shadow"><img src="images/book1.jpg" alt="..." class="img-fluid"/></div>
                     </div>
                     <div class="col-lg-8 m-auto">
-                      <h2 id="title-1">Touch of Class</h2>
-                      <h4 id="author-1">Bertrand Meyer</h4><small id="description-1">
-                        From object technology pioneer and ETH Zurich professor
-                        Bertrand Meyer, winner of the Jolt award
-                        and the ACM Software System Award, a revolutionary textbook that makes learning
-                        programming fun and rewarding.
-                        Meyer builds his presentation on a rich object-oriented software system
-                        supporting graphics and multimedia,
-                        which students can use to produce impressive applications from day one, then
-                        understand inside out
-                        as they learn new programming techniques.</small><br>
-                      <button id="document-type-1" type="button" class="btn btn-sm bg-blue">#book</button>
-                      <button id="availability-1" type="button" class="btn btn-sm bg-green">#avaliable</button>
-                      <button id="bestseller-1" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
+                      <h2 id="title">Touch of class</h2>
+                      <h4 id="author">Bertrand Meyer</h4><small id="description">From object technology pioneer and ETH Zurich professor Bertrand Meyer, winner of the Jolt award and the ACM Software System Award, a revolutionary textbook that makes learning programming fun and rewarding. Meyer builds his presentation on a rich object-oriented software system supporting graphics and multimedia, which students can use to produce impressive applications from day one, then understand inside out as they learn new programming techniques.</small><br/>
+                      <button id="document-type" type="button" class="btn btn-sm bg-blue">#book</button>
+                      <button id="availability" type="button" class="btn btn-sm bg-green">#avaliable</button>
+                      <button id="bestseller" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
                     </div>
-                    <div class="right-col col-lg-2 m-auto">
-                      <button id="details-1" type="button" class="btn btn-secondary book-btn">DETAILS</button>
-                      <button id="reserve-1" type="button" class="btn btn-info book-btn">RESERVE</button>
+                    <div class="right-col col-lg-2 m-auto"><a href="document.html">
+                        <button id="details" href="document.html" type="button" class="btn btn-secondary book-btn">DETAILS</button></a>
+                      <button id="reserve" type="button" class="btn btn-info book-btn">RESERVE</button>
                     </div>
                   </div>
                 </div>
@@ -282,27 +260,18 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-lg-2">
-                      <div id="doc-image-2" class="image has-shadow"><img src="images/book2.jpeg" alt="..." class="img-fluid"></div>
+                      <div id="doc-image" class="image has-shadow"><img src="images/book2.jpeg" alt="..." class="img-fluid"/></div>
                     </div>
                     <div class="col-lg-8 m-auto">
-                      <h2 id="title-2">Introduction to Algorithms</h2>
-                      <h4 id="author-2">
-                        Thomas H. Cormen, Charles E. Leiserson, Donald L. Rivest, Clifford
-                        Stein
-                      </h4><small id="description-2">
-                        3rd edition, 2009 Introduction to Algorithms is a book
-                        by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.
-                        The first edition of the book was widely used as the textbook for algorithms
-                        courses at many universities and
-                        is commonly cited as a reference for algorithms in published papers, with over
-                        10000 citations documented on CiteSeerX.</small><br>
-                      <button id="document-type-2" type="button" class="btn btn-sm bg-blue">#book</button>
-                      <button id="availability-2" type="button" class="btn btn-sm bg-green">#not_avaliable</button>
-                      <button id="bestseller-2" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
+                      <h2 id="title">Introduction to Algorithms</h2>
+                      <h4 id="author">Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein</h4><small id="description">Introduction to Algorithms is a book by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. The first edition of the book was widely used as the textbook for algorithms courses at many universities and is commonly cited as a reference for algorithms in published papers, with over 10000 citations documented on CiteSeerX. The book sold half a million copies during its first 20 years. Its fame has led to the common use of the abbreviation &quot;CLRS&quot; (Cormen, Leiserson, Rivest, Stein), or, in the first edition, &quot;CLR&quot; (Cormen, Leiserson, Rivest).</small><br/>
+                      <button id="document-type" type="button" class="btn btn-sm bg-blue">#book</button>
+                      <button id="availability" type="button" class="btn btn-sm bg-green">#not_avaliable</button>
+                      <button id="bestseller" type="button" class="btn btn-sm bg-yellow">#usual</button>
                     </div>
-                    <div class="right-col col-lg-2 m-auto">
-                      <button id="details-2" type="button" class="btn btn-secondary book-btn">DETAILS</button>
-                      <button id="reserve-2" type="button" class="btn btn-info book-btn">RESERVE</button>
+                    <div class="right-col col-lg-2 m-auto"><a href="document.html">
+                        <button id="details" href="document.html" type="button" class="btn btn-secondary book-btn">DETAILS</button></a>
+                      <button id="reserve" type="button" class="btn btn-info book-btn">RESERVE</button>
                     </div>
                   </div>
                 </div>
@@ -311,27 +280,18 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-lg-2">
-                      <div id="doc-image-3" class="image has-shadow"><img src="images/book3.jpg" alt="..." class="img-fluid"></div>
+                      <div id="doc-image" class="image has-shadow"><img src="images/book3.jpg" alt="..." class="img-fluid"/></div>
                     </div>
                     <div class="col-lg-8 m-auto">
-                      <h2 id="title-3">Kolobok</h2>
-                      <h4 id="author-3">Folklor</h4><small id="description-3">
-                        From object technology pioneer and ETH Zurich professor
-                        Bertrand Meyer, winner of the Jolt award
-                        and the ACM Software System Award, a revolutionary textbook that makes learning
-                        programming fun and rewarding.
-                        Meyer builds his presentation on a rich object-oriented software system
-                        supporting graphics and multimedia,
-                        which students can use to produce impressive applications from day one, then
-                        understand inside out
-                        as they learn new programming techniques.</small><br>
-                      <button id="document-type-3" type="button" class="btn btn-sm bg-blue">#book</button>
-                      <button id="availability-3" type="button" class="btn btn-sm bg-green">#avaliable</button>
-                      <button id="bestseller-3" type="button" class="btn btn-sm bg-yellow">#bestseller</button>
+                      <h2 id="title">Kolobol</h2>
+                      <h4 id="author">Folklor</h4><small id="description">Kolobok (Cyrillic: колобо́к) is the main character of an East Slavic national fairy tale with the same name, represented as a small yellow spherical being. The fairy tale is prevalent in Slavic regions in a number of variations.</small><br/>
+                      <button id="document-type" type="button" class="btn btn-sm bg-blue">#book</button>
+                      <button id="availability" type="button" class="btn btn-sm bg-green">#avaliable</button>
+                      <button id="bestseller" type="button" class="btn btn-sm bg-yellow">#usual</button>
                     </div>
-                    <div class="right-col col-lg-2 m-auto">
-                      <button id="details-3" type="button" class="btn btn-secondary book-btn">DETAILS</button>
-                      <button id="request-3" type="button" class="btn btn-info book-btn">RESERVE</button>
+                    <div class="right-col col-lg-2 m-auto"><a href="document.html">
+                        <button id="details" href="document.html" type="button" class="btn btn-secondary book-btn">DETAILS</button></a>
+                      <button id="reserve" type="button" class="btn btn-info book-btn">RESERVE</button>
                     </div>
                   </div>
                 </div>
@@ -349,9 +309,10 @@
                   <p>Innopolis University, aud. 504b</p>
                 </div>
                 <div class="col-sm-4 text-right">
-                  <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
-                  <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-                  
+                  <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a>
+                    <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                    
+                  </p>
                 </div>
               </div>
             </div>

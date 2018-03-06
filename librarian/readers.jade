@@ -32,10 +32,6 @@ html
                                                     button#add-new-entry.dropdown-item.remove(type='button', href='#', data-toggle='modal', data-target='#myModal')
                                                         i.fa.fa-plus
                                                         | Add new entry
-                                                    //
-                                                        Trigger the modal with a button
-                                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                                                        <!-- Modal
                                         #myModal.modal.fade
                                             .modal-dialog(role='document')
                                                 .modal-content
@@ -98,36 +94,10 @@ html
                                                             th#telegram-0 Telegram
                                                             th#actions-0 Actions
                                                     tbody
-                                                        tr
-                                                            th#id-1(scope='row')
-                                                                a(href='user-card.html') 134532354
-                                                            th#name-1 Elon
-                                                            th#surname-1 Musk
-                                                            td#type-1 Student
-                                                            td#e-mail-1 e.musk@innopolis.ru
-                                                            td#telegram-1 @elonmusk
-                                                            td#actions-1
-                                                                button.btn.btn-dark(type='button', data-toggle='modal', data-target='#myModal2') Edit
-                                                        tr
-                                                            th#id-2(scope='row')
-                                                                a(href='user-card.html') 12352344
-                                                            th#name-2 Steve
-                                                            th#surname-2 Jobs
-                                                            td#type-2 Student
-                                                            td#e-mail-2 easdf@innopolis.ru
-                                                            td#telegram-2 @easdfdf
-                                                            td#actions-2
-                                                                button.btn.btn-dark(type='button', data-toggle='modal', data-target='#myModal2') Edit
-                                                        tr
-                                                            th#id-3(scope='row')
-                                                                a(href='user-card.html') 12345354
-                                                            th#name-3 Charles
-                                                            th#surname-3 Darwin
-                                                            td#type-3 Faculty
-                                                            td#e-mail-3 esdfg@innopolis.ru
-                                                            td#telegram-3 @sadfdf
-                                                            td#actions-3
-                                                                button.btn.btn-dark(type='button', data-toggle='modal', data-target='#myModal2') Edit
+                                                        +reader-row("51015451", "Elon", "Musk", "Student", "qwe@innopolis.ru", "@elonmusk")
+                                                        +reader-row("98756544", "Steve", "Jobs", "Student", "qwe@innopolis.ru", "@sadsad")
+                                                        +reader-row("12345354", "Charles", "Darwin", "Faculty", "qwe@innopolis.ru", "@sadsad")
+
                                                         #myModal2.modal.fade
                                                             .modal-dialog(role='document')
                                                                 .modal-content
