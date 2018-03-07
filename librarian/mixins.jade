@@ -8,7 +8,7 @@ mixin sidebar(active_item)
                 img#sidebar-avatar.img-fluid.rounded-circle(src='images/avatar-1.jpg')
             .title
                 h1#sidebar-username.h4 Elon Musk
-                p#sidebar-usertype Student
+                p#sidebar-usertype Librarian
         br
         // Sidebar Navidation Menus
         +sidebar_list(active_item)
@@ -60,22 +60,22 @@ mixin main-navbar()
                                 li.nav-item.dropdown
                                     a#notifications.nav-link(rel='nofollow', data-target='#', href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                                         i.fa.fa-bell-o
-                                        span.badge.bg-red 12
+                                        span.badge.bg-red 3
                                     ul.dropdown-menu(aria-labelledby='notifications')
                                         li
                                             a.dropdown-item(rel='nofollow', href='#')
                                                 .notification
                                                     .notification-content
                                                         i.fa.fa-envelope.bg-green
-                                                        | You have 6 new messages
+                                                        | You have 2 new messages
                                                     .notification-time
-                                                        small 4 minutes ago
+                                                        small 1 hour ago
                                         li
                                             a.dropdown-item(rel='nofollow', href='#')
                                                 .notification
                                                     .notification-content
-                                                        i.fa.fa-twitter.bg-blue
-                                                        | You have 2 followers
+                                                        i.fa.fa-calendar.bg-blue
+                                                        | International Women’s Day
                                                     .notification-time
                                                         small 4 minutes ago
                                         li
@@ -85,15 +85,7 @@ mixin main-navbar()
                                                         i.fa.fa-upload.bg-orange
                                                         | Server Rebooted
                                                     .notification-time
-                                                        small 4 minutes ago
-                                        li
-                                            a.dropdown-item(rel='nofollow', href='#')
-                                                .notification
-                                                    .notification-content
-                                                        i.fa.fa-twitter.bg-blue
-                                                        | You have 2 followers
-                                                    .notification-time
-                                                        small 10 minutes ago
+                                                        small 2 days ago
                                         li
                                             a.dropdown-item.all-notifications.text-center(rel='nofollow', href='#')
                                                 strong view all notifications 
@@ -114,6 +106,8 @@ mixin head(page_title)
         link(rel='stylesheet', href='css/bootstrap.min.css')
         // Font Awesome CSS
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        // Animate CSS
+        link(rel='stylesheet', href='css/animate.css')
         // Fontastic Custom icon font
         link(rel='stylesheet', href='css/fontastic.css')
         // Google fonts - Poppins
