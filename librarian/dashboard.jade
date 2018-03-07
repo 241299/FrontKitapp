@@ -1,0 +1,51 @@
+include mixins
+doctype html
+html
+    +head()
+    title Dashboard | Kitapp
+    body
+        .page
+            // Main Navbar
+            +main-navbar()
+            .page-content.d-flex.align-items-stretch
+                // Side Navbar
+                +sidebar("dashboard.html")
+                .content-inner
+                    // Page Header
+                    header.page-header
+                        .container-fluid
+                            h2.no-margin-bottom Dashboard
+                    section.welcome
+                        .container-fluid
+                            .card
+                                .card-header.d-flex.align-items-center
+                                    h3.h4 Welcome to Innopolis University Library!
+                                .card-body
+                                    b Schedule: 
+                                    | Monday, Wednesday, Friday (except holidays), 13:00 — 17:30
+                                    br
+                                    br
+                                    b Location: 
+                                    | IU, 504b
+                    section.news
+                        .container-fluid
+                            .card
+                                .card-header.d-flex.align-items-center
+                                    h3.h4 International Women’s Day
+                                .card-body
+                                    .row
+                                        .col-lg-4
+                                            .offer.animated.fadeInLeft
+                                                #doc-image.image.has-shadow(class="offer animated fadeInLeft")
+                                                    img.img-fluid(src='images/8march.jpg', alt='...')
+                                        .col-lg-8
+                                            p Please consider the working hours of the University staff members during the upcoming International Women’s Day (March 8):
+                                            p March 8-9, Thu-Fri — holidays.
+
+                                            b Innopolis University library will not work at these days. 
+                                            br
+                                            b Next working day is March 12, Mon
+                    // Page Footer
+                    +footer()
+        // Javascript files
+        +java-script()

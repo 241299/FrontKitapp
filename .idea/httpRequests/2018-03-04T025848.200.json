@@ -1,0 +1,445 @@
+{
+  "code": "ok",
+  "page": 1,
+  "length": 19,
+  "results": [
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:09:55",
+          "id": 15164253,
+          "status": "Loaned"
+        },
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164311,
+          "status": "Available"
+        }
+      ],
+      "id": 15165082,
+      "title": "Test book 1",
+      "edition": "1st",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 300,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:09:57",
+          "id": 15164397,
+          "status": "Loaned"
+        }
+      ],
+      "id": 15165085,
+      "title": "Test book 3",
+      "edition": "3rd",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 400,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:09:58",
+          "id": 15164514,
+          "status": "Loaned"
+        }
+      ],
+      "id": 15165091,
+      "title": "Test book 4",
+      "edition": "4th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 500,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:09:59",
+          "id": 15164519,
+          "status": "Loaned"
+        },
+        {
+          "due_back": "2018-3-7 15:10:00",
+          "id": 15164522,
+          "status": "Loaned"
+        }
+      ],
+      "id": 15165096,
+      "title": "Test book 5",
+      "edition": "5th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 600,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 13:17:44",
+          "id": 15164530,
+          "status": "Loaned"
+        },
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164552,
+          "status": "Available"
+        }
+      ],
+      "id": 15165102,
+      "title": "Test book 6",
+      "edition": "6th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 700,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:10:02",
+          "id": 15164578,
+          "status": "Loaned"
+        },
+        {
+          "due_back": "2018-3-7 15:10:04",
+          "id": 15164585,
+          "status": "Loaned"
+        }
+      ],
+      "id": 15165115,
+      "title": "Test book 7",
+      "edition": "7th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 800,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:10:05",
+          "id": 15164632,
+          "status": "Loaned"
+        }
+      ],
+      "id": 15165119,
+      "title": "Test book 8",
+      "edition": "8th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 900,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:10:06",
+          "id": 15164665,
+          "status": "Loaned"
+        }
+      ],
+      "id": 15165124,
+      "title": "Test book 9",
+      "edition": "9th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 1001,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-3-7 15:10:06",
+          "id": 15164719,
+          "status": "Loaned"
+        }
+      ],
+      "id": 15165126,
+      "title": "Test book 10_1",
+      "edition": "10_1th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 1002,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 15165132,
+      "title": "Test book 10_2",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027592,
+      "title": "Algorithms",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027593,
+      "title": "Algorithms",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027594,
+      "title": "Kolobok",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027595,
+      "title": "Networks",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027596,
+      "title": "Computer Architecture",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027597,
+      "title": "Clean Architecture",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027598,
+      "title": "Code Complete",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027599,
+      "title": "Hackerbook",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    },
+    {
+      "authors": [
+        {
+          "first_name": "Bob",
+          "last_name": "Smith"
+        }
+      ],
+      "cost": 100205439538,
+      "image": "/images/no_image.png",
+      "instances": [
+        {
+          "due_back": "2018-2-6 18:50:55",
+          "id": 15164746,
+          "status": "Reference"
+        }
+      ],
+      "id": 8027600,
+      "title": "LolKek",
+      "edition": "10_2th",
+      "publisher": "Inno Uni",
+      "keywords": "1,2,3"
+    }
+  ]
+}

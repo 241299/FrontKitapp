@@ -1,0 +1,72 @@
+GET https://kitapptatar.ru/api/users/all?token=35a4bd2c
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T025914.404.html
+
+###
+
+GET https://kitapptatar.ru/api/books/all?token=35a4bd2c
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T025848.200.json
+
+###
+
+GET https://kitapptatar.ru/api/users/all?token=35a4bd2c
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T025824.404.html
+
+###
+
+GET https://kitapptatar.ru/api/books/all?token=35a4bd2c
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T035220.200.json
+
+###
+
+GET https://kitapptatar.ru/api/books/all?token=librarianToken
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T031052.403.json
+
+###
+
+GET https://kitapptatar.ru/api/books/all?token="librarianToken"
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T031029.403.json
+
+###
+
+GET https://kitapptatar.ru/api/books/all?token=librarianToken
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T031002.403.json
+
+###
+
+GET https://kitapptatar.ru/api/books/all?token="patron0@kitapptatar.ru"
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T030924.403.json
+
+###
+
+GET https://kitapptatar.ru/api/books/all
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-03-04T030713.403.json
+
+###
+

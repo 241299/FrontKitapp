@@ -1,0 +1,60 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.tmpl.min.js"></script>
+<script>
+    $(function() {
+
+        $.ajax({
+            url: 'mydata.json',
+            success: function(data) {
+                var template = $('#flowerTmpl');
+                template.tmpl(data.slice(0, 3)).appendTo('#row1');
+                template.tmpl(data.slice(3)).appendTo('#row2');
+            }
+        });
+
+        // Обработчик клика по кнопке "Заказать"
+        $('button').click(function(e) {
+            $.ajax({
+                url: 'phphandler.php',
+                type: 'post',
+                data: $('form').serialize(),
+                success: processServerResponse,
+                dataType: 'json'
+            });
+            e.preventDefault()
+        });
+
+        function processServerResponse(data) {
+            // Изначально скрываем всю продукцию
+            var inputElems = $('div.dcell').hide();
+
+            for (var prop in data) {
+                // Отображаем только ту продукцию, заказ которой больше 0
+                // (в ответе от сервера содержится только такая продукция)
+                var filtered = inputElems.has('input[name=' + prop + ']')
+                    .appendTo("#row1").show();
+            }
+
+            // Скрываем базовые элементы формы
+            $('#buttonDiv, #totalDiv').remove();
+
+            // Отображаем новые элементы из шаблона totalTmpl
+            $('#totalTmpl').tmpl(data).appendTo('body');
+        }
+
+    });
+</script>
+<script id="totalTmpl" type="text/x-jquery-tmpl">
+        <div id="totalDiv" style="clear: both; padding: 5px">
+            <div style="text-align: center">Всего заказов: <span id=total>${total}</span></div>
+            <div id="buttonDiv"><button type="submit">Заказать</button></div>
+        </div>
+</script>
+<script id="flowerTmpl" type="text/x-jquery-tmpl">
+        <div class="dcell">
+            <img src="http://professorweb.ru/downloads/jquery/${product}.png"/>
+            <label for="${product}">${name}:</label>
+            <input name="${product}" data-price="${price}" data-stock="${stocklevel}"
+                value="0" required />
+        </div>
+</script>

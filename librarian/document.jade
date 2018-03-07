@@ -1,0 +1,200 @@
+include mixins
+doctype html
+html
+    +head()
+    title Document | Kitapp
+    body
+        .page
+            // Main Navbar
+            +main-navbar()
+            .page-content.d-flex.align-items-stretch
+                // Side Navbar
+                +sidebar("catalog.html")
+                .content-inner
+                    // Page Header
+                    header.page-header
+                        .container-fluid
+                            h2.no-margin-bottom Catalog / Document
+                    section.document
+                        .container-fluid
+                            .card
+                                .card-header.d-flex.align-items-center
+                                    h3#title.h4 Touch of Class
+                                .card-body
+                                    .row
+                                        .col-lg-2
+                                            .image.has-shadow
+                                                img#document-image.img-fluid(src='images/book1.jpg', alt='...')
+                                        .col-lg-8.m-auto
+                                            h4#author
+                                                | Bertrand Meyer
+                                            h5#edition 3rd edition, 2009
+                                            h6#avaliable-copies Avaliable copies: 1/3
+                                            h6#keywords Keywords: Programming, algorithms, data structures
+                                            br
+                                            small#description
+                                                | From object technology pioneer and ETH Zurich professor Bertrand Meyer, winner of the Jolt award and the ACM Software System Award, a revolutionary textbook that makes learning programming fun and rewarding. Meyer builds his presentation on a rich object-oriented software system supporting graphics and multimedia, which students can use to produce impressive applications from day one, then understand inside out as they learn new programming techniques.
+                                                br
+                                            br
+                                            button#document-type.btn.btn-sm.bg-blue(type='button') #book
+                                            button#availability.btn.btn-sm.bg-green(type='button')
+                                                | #avaliable
+                                            button#bestseller.btn.btn-sm.bg-yellow(type='button')
+                                                | #bestseller
+                                        .right-col.col-lg-2.m-auto
+                                            button#edit.btn.btn-info.book-btn(type='button', data-toggle='modal', data-target='#myModal')
+                                                | EDIT
+                                            button#request.btn.btn-info.book-btn(type='button') REQUEST
+                    //
+                        Trigger the modal with a button
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                        <!-- Modal
+                    #myModal.modal.fade
+                        .modal-dialog(role='document')
+                            .modal-content
+                                .modal-header
+                                    h5.modal-title Update book info
+                                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                        span(aria-hidden='true') ×
+                                .modal-body
+                                    form
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-title') Title
+                                            .col-10
+                                                input#edit-title.form-control(type='text', value='Touch of class')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-authors') Authors
+                                            .col-10
+                                                input#edit-authors.form-control(type='text', value='Bertrand Meyer')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-edition') Edition
+                                            .col-10
+                                                input#edit-edition.form-control(type='text', value='3')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-year') Year
+                                            .col-10
+                                                input#edit-year.form-control(type='number', value='2017')
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-keywords') Keywords
+                                            .col-10
+                                                input#edit-keywords.form-control(type='text', value='it, oop, eiffel')
+                                        .form-group
+                                            label(for='edit-description') Description
+                                            textarea#edit-description.form-control(rows='3') Eiffel one love
+                                        .form-group.row
+                                            label.col-2.col-form-label(for='edit-copies') Copies
+                                            .col-5
+                                                input#edit-copies.form-control(readonly='readonly', type='number', value='3')
+                                        .form-group.row
+                                            label.col-6.col-form-label(for='edit-copies')
+                                                a(data-toggle='collapse', href='#collapseExample', aria-expanded='false', aria-controls='collapseExample') Show all copies
+                                            .container-fluid
+                                                #collapseExample.collapse
+                                                    .card.card-block
+                                                        table.table.table-striped
+                                                            thead
+                                                                tr
+                                                                    th #
+                                                                    th ID
+                                                                    th Status
+                                                                    td
+                                                                        button.btn.btn-primary
+                                                                            i.fa.fa-plus(style='color:limegreen')
+                                                            tbody
+                                                                tr
+                                                                    th(scope='row') 1
+                                                                    td 73voge8e83
+                                                                    td
+                                                                        select#document-type.form-control
+                                                                            option Available
+                                                                            option Reference
+                                                                            option Reserved
+                                                                            option Loaned
+                                                                            option Maintenance 
+                                                                    //On hands
+                                                                    td
+                                                                        button.btn.btn-outline-secondary
+                                                                            i.fa.fa-times(style='color:crimson')
+                                                                tr
+                                                                    th(scope='row') 2
+                                                                    td 837980ghhjd
+                                                                    td
+                                                                        select#document-type.form-control
+                                                                            option Available
+                                                                            option Reference
+                                                                            option Reserved
+                                                                            option Loaned
+                                                                            option Maintenance 
+                                                                    td
+                                                                        button.btn.btn-outline-secondary
+                                                                            i.fa.fa-times(style='color:crimson')
+                                                                tr
+                                                                    th(scope='row') 3
+                                                                    td 4870984hgje
+                                                                    td
+                                                                        select#document-type.form-control
+                                                                            option Available
+                                                                            option Reference
+                                                                            option Reserved
+                                                                            option Loaned
+                                                                            option Maintenance 
+                                                                    td
+                                                                        button.btn.btn-outline-secondary
+                                                                            i.fa.fa-times(style='color:crimson')
+                                        .form-check
+                                            label.form-check-label
+                                                input#edit-bestseller.form-check-input(type='checkbox')
+                                                |                                         Bestseller
+                                        div(style='position:relative;')
+                                            a.btn.btn-primary(href='javascript:')
+                                                | Change image...
+                                                input#change-image(type='file', style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
+                                            span#upload-file-info.label.label-info
+                                .modal-footer
+                                    button.btn.btn-danger(type='button') Delete
+                                    button.btn.btn-primary(type='button') Save changes
+                                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                            #delInst.modal.fade
+                                .modal-dialog(role='document')
+                                    .modal-content
+                                        .modal-header
+                                            h5.modal-title Modal title
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                span(aria-hidden='true') ×
+                                        .modal-body
+                                            p Modal body text goes here.
+                                        .modal-footer
+                                            button.btn.btn-primary(type='button') Save changes
+                                            button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                    // Page Footer
+                    +footer()
+        script.
+            $(function () {
+                $('#login').popover({
+                    placement: 'bottom',
+                    title: 'Popover Form',
+                    html: true,
+                    content: $('#myForm4').html()
+                }).on('click', function () {
+                    // had to put it within the on click action so it grabs the correct info on submit
+                    $('#login').click(function () {
+                        $('#result').after("form submitted by " + $('#email').val())
+                        $.post('/echo/html/', {
+                            email: $('#email').val(),
+                            name: $('#name').val(),
+                            gender: $('#gender').val()
+                        }, function (r) {
+                            $('#pops').popover('hide')
+                            $('#result').html('resonse from server could be here')
+                        })
+                    })
+                })
+            })
+        script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+        script(src='vendor/popper.js/umd/popper.min.js')
+        script(src='vendor/bootstrap/js/bootstrap.min.js')
+        script(src='vendor/jquery.cookie/jquery.cookie.js')
+        script(src='vendor/chart.js/Chart.min.js')
+        script(src='vendor/jquery-validation/jquery.validate.min.js')
+        script(src='js/charts-home.js')
+        script(src='js/front.js')
