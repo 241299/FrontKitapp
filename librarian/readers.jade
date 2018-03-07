@@ -50,10 +50,10 @@ html
                                                                 input#create_last_name.form-control(type='text', placeholder='Last name')
                                                             .form-group
                                                                 label Birth date
-                                                                input#create_birth_date.form-control(type='number', placeholder='Birth date', value='270797')
+                                                                input#create_birth_date.form-control(type='number', placeholder='Birth date')
                                                             .form-group
                                                                 label E-mail address
-                                                                input#create_email.form-control(type='email', aria-describedby='emailHelp', placeholder='Email', value='@kitapptatar.ru')
+                                                                input#create_email.form-control(type='email', aria-describedby='emailHelp', placeholder='Email', value='@innopolis.ru')
                                                                 small#new-email.form-text.text-muted
                                                                     | The password
                                                                     | and login will be sent to this email
@@ -62,13 +62,13 @@ html
                                                                 input#create_address.form-control(type='text', placeholder='Address')
                                                             .form-group
                                                                 label Phone number
-                                                                input#create_phone.form-control(type='number', placeholder='Phone number', value='901234567')
+                                                                input#create_phone.form-control(type='number', placeholder='Phone number')
                                                             .form-group
                                                                 label Occupation
                                                                 input#create_occupation.form-control(type='text', placeholder='Phone number', value='none')
                                                             .form-group
                                                                 label Telegram alias
-                                                                input#create_telegram.form-control(type='tel', placeholder='Telegram alias', value='@elonmusk')
+                                                                input#create_telegram.form-control(type='tel', placeholder='Telegram alias')
                                                             .form-group
                                                                 label(for='user-type') Select type of user:
                                                                 select#user-type.form-control
@@ -77,8 +77,7 @@ html
                                                                     option Librarian
                                                     .modal-footer
                                                         button#save-changes.btn.btn-primary(type='button')
-                                                            | Save
-                                                            | changes
+                                                            | Save changes
                                                         button#close.btn.btn-secondary(type='button', data-dismiss='modal')
                                                             | Close
                                         .card-body
@@ -97,8 +96,8 @@ html
                                                         +reader-row("51015451", "Elon", "Musk", "Student", "qwe@innopolis.ru", "@elonmusk")
                                                         +reader-row("98756544", "Steve", "Jobs", "Student", "qwe@innopolis.ru", "@sadsad")
                                                         +reader-row("12345354", "Charles", "Darwin", "Faculty", "qwe@innopolis.ru", "@sadsad")
-
-                                                        #myModal2.modal.fade
+                                                        +edit-reader()
+                                                        //#myModal2.modal.fade
                                                             .modal-dialog(role='document')
                                                                 .modal-content
                                                                     .modal-header

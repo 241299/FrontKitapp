@@ -41,10 +41,12 @@
             <div class="navbar-holder d-flex align-items-center justify-content-between">
               <!-- Navbar Header-->
               <div class="navbar-header">
-                <!-- Navbar Brand--><a href="catalog.html" class="navbar-brand">
-                  <div class="brand-text brand-big"><strong>Kitapp</strong><span>LMS</span></div>
-                  <div class="brand-text brand-small"><strong>Kitapp</strong></div></a>
-                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+                <div class="offer animated fadeInRight">
+                  <!-- Navbar Brand--><a href="catalog.html" class="navbar-brand">
+                    <div class="brand-text brand-big"><strong>Kitapp</strong><span>LMS</span></div>
+                    <div class="brand-text brand-small"><strong>Kitapp</strong></div></a>
+                  <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+                </div>
               </div>
               <!-- Navbar Menu-->
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
@@ -142,11 +144,11 @@
                               </div>
                               <div class="form-group">
                                 <label>Birth date</label>
-                                <input id="create_birth_date" type="number" placeholder="Birth date" value="270797" class="form-control">
+                                <input id="create_birth_date" type="number" placeholder="Birth date" class="form-control">
                               </div>
                               <div class="form-group">
                                 <label>E-mail address</label>
-                                <input id="create_email" type="email" aria-describedby="emailHelp" placeholder="Email" value="@kitapptatar.ru" class="form-control"><small id="new-email" class="form-text text-muted">
+                                <input id="create_email" type="email" aria-describedby="emailHelp" placeholder="Email" value="@innopolis.ru" class="form-control"><small id="new-email" class="form-text text-muted">
                                   The password
                                   and login will be sent to this email</small>
                               </div>
@@ -156,7 +158,7 @@
                               </div>
                               <div class="form-group">
                                 <label>Phone number</label>
-                                <input id="create_phone" type="number" placeholder="Phone number" value="901234567" class="form-control">
+                                <input id="create_phone" type="number" placeholder="Phone number" class="form-control">
                               </div>
                               <div class="form-group">
                                 <label>Occupation</label>
@@ -164,7 +166,7 @@
                               </div>
                               <div class="form-group">
                                 <label>Telegram alias</label>
-                                <input id="create_telegram" type="tel" placeholder="Telegram alias" value="@elonmusk" class="form-control">
+                                <input id="create_telegram" type="tel" placeholder="Telegram alias" class="form-control">
                               </div>
                               <div class="form-group">
                                 <label for="user-type">Select type of user:</label>
@@ -177,10 +179,7 @@
                             </form>
                           </div>
                           <div class="modal-footer">
-                            <button id="save-changes" type="button" class="btn btn-primary">
-                              Save
-                              changes
-                            </button>
+                            <button id="save-changes" type="button" class="btn btn-primary">Save changes</button>
                             <button id="close" type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
                           </div>
                         </div>
@@ -238,31 +237,47 @@
                               <div role="document" class="modal-dialog">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h5 class="modal-title">Add new reader</h5>
+                                    <h5 class="modal-title">Edit reader</h5>
                                     <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
                                   </div>
                                   <div class="modal-body">
-                                    <p>Please fill out the info about the new reader</p>
+                                    <p>Please edit the info about the new reader</p>
                                     <form>
                                       <div class="form-group">
-                                        <label>Full name</label>
-                                        <input id="name" type="emagil" placeholder="Full name" class="form-control">
+                                        <label>First name</label>
+                                        <input id="create_first_name" type="text" placeholder="First name" value="Elon" class="form-control"/>
                                       </div>
                                       <div class="form-group">
-                                        <label>Email address</label>
-                                        <input id="email" type="emagil" aria-describedby="emailHelp" placeholder="Email" class="form-control"><small id="newEmail" class="form-text text-muted">The password and login will be sent to this email</small>
+                                        <label>Last name</label>
+                                        <input id="create_last_name" type="text" placeholder="Last name" value="Musk" class="form-control"/>
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Birth date</label>
+                                        <input id="create_birth_date" type="number" placeholder="Birth date" value="270797" class="form-control"/>
+                                      </div>
+                                      <div class="form-group">
+                                        <label>E-mail address</label>
+                                        <input id="create_email" type="email" aria-describedby="emailHelp" placeholder="Email" value="qwe@innopolis.ru" class="form-control"/><small id="new-email" class="form-text text-muted">The password and login will be sent to this email</small>
                                       </div>
                                       <div class="form-group">
                                         <label>Address</label>
-                                        <input id="address" type="newAgddress" placeholder="Address" class="form-control">
+                                        <input id="create_address" type="text" placeholder="Address" value="Universitetskaya str, 1" class="form-control"/>
                                       </div>
                                       <div class="form-group">
                                         <label>Phone number</label>
-                                        <input id="phonenumber" type="newPhgoneNumber" placeholder="Phone number" class="form-control">
+                                        <input id="create_phone" type="number" placeholder="Phone number" value="901234567" class="form-control"/>
                                       </div>
                                       <div class="form-group">
-                                        <label for="sel1">Select type of user:</label>
-                                        <select id="sel1" class="form-control">
+                                        <label>Occupation</label>
+                                        <input id="create_occupation" type="text" placeholder="Phone number" value="none" class="form-control"/>
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Telegram alias</label>
+                                        <input id="create_telegram" type="tel" placeholder="Telegram alias" value="@elonmusk" class="form-control"/>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="user-type">Select type of user:</label>
+                                        <select id="user-type" class="form-control">
                                           <option>Student</option>
                                           <option>Faculty</option>
                                           <option>Librarian</option>
@@ -271,6 +286,12 @@
                                     </form>
                                   </div>
                                   <div class="modal-footer">
+                                    <!--button#save-changes.btn.btn-primary(type='button')
+                                    | Save
+                                    | changes
+                                    -->
+                                    <!--button#close.btn.btn-secondary(type='button', data-dismiss='modal')| Close
+                                    -->
                                     <button type="button" class="btn btn-danger">Delete user</button>
                                     <button type="button" class="btn btn-primary">Save changes</button>
                                     <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
@@ -278,6 +299,40 @@
                                 </div>
                               </div>
                             </div>
+                            <!--#myModal2.modal.fade
+                            .modal-dialog(role='document')
+                                .modal-content
+                                    .modal-header
+                                        h5.modal-title Add new reader
+                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                            span(aria-hidden='true') ×
+                                    .modal-body
+                                        p Please fill out the info about the new reader
+                                        form
+                                            .form-group
+                                                label Full name
+                                                input#name.form-control(type='emagil', placeholder='Full name')
+                                            .form-group
+                                                label Email address
+                                                input#email.form-control(type='emagil', aria-describedby='emailHelp', placeholder='Email')
+                                                small#newEmail.form-text.text-muted The password and login will be sent to this email
+                                            .form-group
+                                                label Address
+                                                input#address.form-control(type='newAgddress', placeholder='Address')
+                                            .form-group
+                                                label Phone number
+                                                input#phonenumber.form-control(type='newPhgoneNumber', placeholder='Phone number')
+                                            .form-group
+                                                label(for='sel1') Select type of user:
+                                                select#sel1.form-control
+                                                    option Student
+                                                    option Faculty
+                                                    option Librarian
+                                    .modal-footer
+                                        button.btn.btn-danger(type='button') Delete user
+                                        button.btn.btn-primary(type='button') Save changes
+                                        button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                            -->
                           </tbody>
                         </table>
                       </div>
