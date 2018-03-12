@@ -1,8 +1,7 @@
 include mixins
 doctype html
 html
-    +head()
-    title Dashboard | Kitapp
+    +head("Dashboard")
     body
         .page
             // Main Navbar
@@ -21,12 +20,12 @@ html
                                 .card-header.d-flex.align-items-center
                                     h3.h4 Welcome to Innopolis University Library!
                                 .card-body
-                                    b Schedule: 
-                                    | Monday, Wednesday, Friday (except holidays), 13:00 — 17:30
-                                    br
-                                    br
-                                    b Location: 
-                                    | IU, 504b
+                                    p
+                                        b Schedule: 
+                                        | Monday, Wednesday, Friday (except holidays), 13:00 — 17:30
+                                    p
+                                        b Location: 
+                                        | IU, 504b
                     section.news
                         .container-fluid
                             .card
@@ -41,7 +40,6 @@ html
                                         .col-lg-8
                                             p Please consider the working hours of the University staff members during the upcoming International Women’s Day (March 8):
                                             p March 8-9, Thu-Fri — holidays.
-
                                             b Innopolis University library will not work at these days. 
                                             br
                                             b Next working day is March 12, Mon

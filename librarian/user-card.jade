@@ -1,8 +1,7 @@
 include mixins
 doctype html
 html
-    +head()
-    title User Card | Kitapp
+    +head("User Card")
     body
         .page
             // Main Navbar
@@ -22,46 +21,6 @@ html
                                     .card
                                         .card-header.d-flex.align-items-center
                                             h3.h4 Documents
-                                        //.card-dropdown
-                                            .dropdown
-                                                button#database-dropdown-menu.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                                                    i.fa.fa-ellipsis-v
-                                                .dropdown-menu.dropdown-menu-right.has-shadow(aria-labelledby='readers-dropdown-menu')
-                                                    button#add-new-entry.dropdown-item.remove(type='button', href='#', data-toggle='modal', data-target='#myModal')
-                                                        i.fa.fa-plus
-                                                        | Add new entry
-                                        //#myModal.modal.fade
-                                            .modal-dialog(role='document')
-                                                .modal-content
-                                                    .modal-header
-                                                        h5.modal-title Add new reader
-                                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                            span(aria-hidden='true') ×
-                                                    .modal-body
-                                                        p Please fill out the info about the new reader
-                                                        form
-                                                            .form-group
-                                                                label Full name
-                                                                input#name.form-control(type='email', placeholder='Full name')
-                                                            .form-group
-                                                                label Email address
-                                                                input#email.form-control(type='email', aria-describedby='emailHelp', placeholder='Email')
-                                                                small#newEmail.form-text.text-muted The password and login will be sent to this email
-                                                            .form-group
-                                                                label Address
-                                                                input#address.form-control(type='newAddress', placeholder='Address')
-                                                            .form-group
-                                                                label Phone number
-                                                                input#phonenumber.form-control(type='newPhoneNumber', placeholder='Phone number')
-                                                            .form-group
-                                                                label(for='sel1') Select type of user:
-                                                                select#sel1.form-control
-                                                                    option Student
-                                                                    option Faculty
-                                                                    option Librarian
-                                                    .modal-footer
-                                                        button.btn.btn-primary(type='button') Save changes
-                                                        button.btn.btn-secondary(type='button', data-dismiss='modal') Close
                                         .card-body
                                             .table-responsive
                                                 table.table.table-striped.table-hover
@@ -81,14 +40,6 @@ html
                             .card
                                 .card-header.d-flex.align-items-center
                                     h3.h4 User Data
-                                //.card-dropdown
-                                    .dropdown
-                                        button.dropdown-toggle(type='button', id='databaseыа-dropdown-menu', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                                            i.fa.fa-ellipsis-v
-                                        .dropdown-menu.dropdown-menu-right.has-shadow(aria-labelledby='readers-dropdown-menu')
-                                            button.dropdown-item.remove(type='button', id='add-new-entryтт', href='#', data-toggle='modal', data-target='#myModal2')
-                                                i.fa.fa-plus
-                                                | Add new entry
                                 #myModal2.modal.fade
                                     .modal-dialog(role='document')
                                         .modal-content
@@ -156,16 +107,12 @@ html
                                             .col-sm-3
                                                 .dropdown.disabled
                                                     select(disabled='')
-                                                       option Student
+                                                        option Student
                                                         option Faculty
                                                         option Librarian
                                                     script.
                                         .form-group.row
                                             label.col-sm-3.form-control-label(for='fileInput') Avatar
-                                            //
-                                                <div class="col-sm-9">
-                                                <input id="fileInput" type="file" class="form-control-file" name="sdhjksf">
-                                                </div>
                                             .col-sm-9
                                                 a.btn.btn-outline-dark(href='javascript:')
                                                     | Add image...

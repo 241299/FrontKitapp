@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/><!DOCTYPE html>
 <html>
   <head>
+    <title>User Card | Kitapp</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content=""/>
@@ -31,7 +32,6 @@
     
     -->
   </head>
-  <title>User Card | Kitapp</title>
   <body>
     <div class="page">
       <!-- Main Navbar-->
@@ -113,48 +113,6 @@
                     <div class="card-header d-flex align-items-center">
                       <h3 class="h4">Documents</h3>
                     </div>
-                    <!--.card-dropdown
-                    .dropdown
-                        button#database-dropdown-menu.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                            i.fa.fa-ellipsis-v
-                        .dropdown-menu.dropdown-menu-right.has-shadow(aria-labelledby='readers-dropdown-menu')
-                            button#add-new-entry.dropdown-item.remove(type='button', href='#', data-toggle='modal', data-target='#myModal')
-                                i.fa.fa-plus
-                                | Add new entry
-                    -->
-                    <!--#myModal.modal.fade
-                    .modal-dialog(role='document')
-                        .modal-content
-                            .modal-header
-                                h5.modal-title Add new reader
-                                button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                    span(aria-hidden='true') ×
-                            .modal-body
-                                p Please fill out the info about the new reader
-                                form
-                                    .form-group
-                                        label Full name
-                                        input#name.form-control(type='email', placeholder='Full name')
-                                    .form-group
-                                        label Email address
-                                        input#email.form-control(type='email', aria-describedby='emailHelp', placeholder='Email')
-                                        small#newEmail.form-text.text-muted The password and login will be sent to this email
-                                    .form-group
-                                        label Address
-                                        input#address.form-control(type='newAddress', placeholder='Address')
-                                    .form-group
-                                        label Phone number
-                                        input#phonenumber.form-control(type='newPhoneNumber', placeholder='Phone number')
-                                    .form-group
-                                        label(for='sel1') Select type of user:
-                                        select#sel1.form-control
-                                            option Student
-                                            option Faculty
-                                            option Librarian
-                            .modal-footer
-                                button.btn.btn-primary(type='button') Save changes
-                                button.btn.btn-secondary(type='button', data-dismiss='modal') Close
-                    -->
                     <div class="card-body">
                       <div class="table-responsive">
                         <table class="table table-striped table-hover">
@@ -204,15 +162,6 @@
                 <div class="card-header d-flex align-items-center">
                   <h3 class="h4">User Data</h3>
                 </div>
-                <!--.card-dropdown
-                .dropdown
-                    button.dropdown-toggle(type='button', id='databaseыа-dropdown-menu', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        i.fa.fa-ellipsis-v
-                    .dropdown-menu.dropdown-menu-right.has-shadow(aria-labelledby='readers-dropdown-menu')
-                        button.dropdown-item.remove(type='button', id='add-new-entryтт', href='#', data-toggle='modal', data-target='#myModal2')
-                            i.fa.fa-plus
-                            | Add new entry
-                -->
                 <div id="myModal2" class="modal fade">
                   <div role="document" class="modal-dialog">
                     <div class="modal-content">
@@ -306,10 +255,9 @@
                       <div class="col-sm-3">
                         <div class="dropdown disabled">
                           <select disabled="">
-                            <option>Student
-                              <option>Faculty</option>
-                              <option>Librarian</option>
-                            </option>
+                            <option>Student</option>
+                            <option>Faculty</option>
+                            <option>Librarian</option>
                           </select>
                           <script></script>
                         </div>
@@ -317,11 +265,6 @@
                     </div>
                     <div class="form-group row">
                       <label for="fileInput" class="col-sm-3 form-control-label">Avatar</label>
-                      <!--
-                      <div class="col-sm-9">
-                      <input id="fileInput" type="file" class="form-control-file" name="sdhjksf">
-                      </div>
-                      -->
                       <div class="col-sm-9"><a href="javascript:" class="btn btn-outline-dark">Add image...
                           <input id="add-image" type="file" style="position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:&quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=0)&quot;;opacity:0;background-color:transparent;color:transparent;" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"></a><span id="upload-file-info" class="label label-info"></span></div>
                     </div>

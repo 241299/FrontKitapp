@@ -1,8 +1,7 @@
 include mixins
 doctype html
 html
-    +head()
-    title Readers | Kitapp
+    +head("Readers")
     body
         .page
             // Main Navbar
@@ -86,50 +85,17 @@ html
                                                     thead
                                                         tr
                                                             th#id-0 ID
-                                                            th#name-0 Name
-                                                            th#surname-0 Surname
+                                                            th#name-0 First name
+                                                            th#surname-0 Last name
                                                             th#type-0 Type
                                                             th#e-mail-0 E-mail
                                                             th#telegram-0 Telegram
                                                             th#actions-0 Actions
                                                     tbody
-                                                        +reader-row("51015451", "Elon", "Musk", "Student", "qwe@innopolis.ru", "@elonmusk")
-                                                        +reader-row("98756544", "Steve", "Jobs", "Student", "qwe@innopolis.ru", "@sadsad")
-                                                        +reader-row("12345354", "Charles", "Darwin", "Faculty", "qwe@innopolis.ru", "@sadsad")
+                                                        -readers = [{id: 51015451, first_name: "Elon", last_name: "Musk", type: "student", birth_date: "11-11-2000", phone: 89191234567, occupation: "", about: "", email:"qwe@innopolis.ru", telegram: "@elonmusk", avatar: ""}, {id: 98756544, first_name: "Steve", last_name: "Jobs", type: "student", birth_date: "11-11-2000", phone: 89191234567, occupation: "", about: "", email:"qwe@innopolis.ru", telegram: "@sadsad", avatar: ""}, {id: 12345354, first_name: "Charles", last_name: "Darwin", type: "faculty", birth_date: "11-11-2000", phone: 89191234567, occupation: "", about: "", email:"qwe@innopolis.ru", telegram: "@sadsad", avatar: ""}];
+                                                        for reader in readers
+                                                            +reader-row(reader)
                                                         +edit-reader()
-                                                        //#myModal2.modal.fade
-                                                            .modal-dialog(role='document')
-                                                                .modal-content
-                                                                    .modal-header
-                                                                        h5.modal-title Add new reader
-                                                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                                            span(aria-hidden='true') ×
-                                                                    .modal-body
-                                                                        p Please fill out the info about the new reader
-                                                                        form
-                                                                            .form-group
-                                                                                label Full name
-                                                                                input#name.form-control(type='emagil', placeholder='Full name')
-                                                                            .form-group
-                                                                                label Email address
-                                                                                input#email.form-control(type='emagil', aria-describedby='emailHelp', placeholder='Email')
-                                                                                small#newEmail.form-text.text-muted The password and login will be sent to this email
-                                                                            .form-group
-                                                                                label Address
-                                                                                input#address.form-control(type='newAgddress', placeholder='Address')
-                                                                            .form-group
-                                                                                label Phone number
-                                                                                input#phonenumber.form-control(type='newPhgoneNumber', placeholder='Phone number')
-                                                                            .form-group
-                                                                                label(for='sel1') Select type of user:
-                                                                                select#sel1.form-control
-                                                                                    option Student
-                                                                                    option Faculty
-                                                                                    option Librarian
-                                                                    .modal-footer
-                                                                        button.btn.btn-danger(type='button') Delete user
-                                                                        button.btn.btn-primary(type='button') Save changes
-                                                                        button.btn.btn-secondary(type='button', data-dismiss='modal') Close
                     // Page Footer
                     +footer()
         // Javascript files

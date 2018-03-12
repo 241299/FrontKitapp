@@ -1,8 +1,7 @@
 include mixins
 doctype html
 html
-    +head()
-    title Login | Kitapp
+    +head("Login")
     body
         .page.login-page
             .container.d-flex.align-items-center
@@ -31,11 +30,10 @@ html
                                             input#login-password.input-material(type='password', name='loginPassword', required='')
                                             label.label-material(for='login-password') Password
                                         a#login.btn.btn-primary(href='dashboard.html') Login
-                                        // This should be submit button but I replaced it with <a> for demo purposes
-                                    a.forgot-pass(href='#') Forgot Password?
+                                    // This should be submit button but I replaced it with <a> for demo purposes
+                                    a.forgot-pass(href='#') Forgot password?
                                     br
-                                    small Have issues?
-                                    a.support(href='mailto:it@innopolis.ru') Contact support
+                                    a.support(href='mailto:it@innopolis.ru') Have issues?
             .copyrights.text-center
                 p
                     | Kitapp, 2018 
@@ -43,10 +41,5 @@ html
                     | Design by 
                     a.external(href='https://bootstrapious.com/admin-templates') Bootstrapious
                     // Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)
-        script(src='https://code.jquery.com/jquery-3.2.1.min.js')
-        script(src='vendor/popper.js/umd/popper.min.js')
-        script(src='vendor/bootstrap/js/bootstrap.min.js')
-        script(src='vendor/jquery.cookie/jquery.cookie.js')
-        script(src='vendor/chart.js/Chart.min.js')
-        script(src='vendor/jquery-validation/jquery.validate.min.js')
-        script(src='js/front.js')
+        // Javascript files
+        +java-script()

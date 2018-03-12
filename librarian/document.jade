@@ -1,8 +1,7 @@
 include mixins
 doctype html
 html
-    +head()
-    title Document | Kitapp
+    +head("Document")
     body
         .page
             // Main Navbar
@@ -37,18 +36,11 @@ html
                                                 br
                                             br
                                             button#document-type.btn.btn-sm.bg-blue(type='button') #book
-                                            button#availability.btn.btn-sm.bg-green(type='button')
-                                                | #avaliable
-                                            button#bestseller.btn.btn-sm.bg-yellow(type='button')
-                                                | #bestseller
+                                            button#availability.btn.btn-sm.bg-green(type='button') #avaliable
+                                            button#bestseller.btn.btn-sm.bg-yellow(type='button') #bestseller
                                         .right-col.col-lg-2.m-auto
-                                            button#edit.btn.btn-info.book-btn(type='button', data-toggle='modal', data-target='#myModal')
-                                                | EDIT
+                                            button#edit.btn.btn-info.book-btn(type='button', data-toggle='modal', data-target='#myModal') EDIT
                                             button#request.btn.btn-info.book-btn(type='button') REQUEST
-                    //
-                        Trigger the modal with a button
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                        <!-- Modal
                     #myModal.modal.fade
                         .modal-dialog(role='document')
                             .modal-content
@@ -98,8 +90,8 @@ html
                                                                     th ID
                                                                     th Status
                                                                     td
-                                                                        button.btn.btn-primary
-                                                                            i.fa.fa-plus(style='color:limegreen')
+                                                                        button.btn.btn-outline-secondary
+                                                                            i.fa.fa-plus(style='color:#00FF00')
                                                             tbody
                                                                 tr
                                                                     th(scope='row') 1
@@ -111,7 +103,6 @@ html
                                                                             option Reserved
                                                                             option Loaned
                                                                             option Maintenance 
-                                                                    //On hands
                                                                     td
                                                                         button.btn.btn-outline-secondary
                                                                             i.fa.fa-times(style='color:crimson')
@@ -190,11 +181,5 @@ html
                     })
                 })
             })
-        script(src='https://code.jquery.com/jquery-3.2.1.min.js')
-        script(src='vendor/popper.js/umd/popper.min.js')
-        script(src='vendor/bootstrap/js/bootstrap.min.js')
-        script(src='vendor/jquery.cookie/jquery.cookie.js')
-        script(src='vendor/chart.js/Chart.min.js')
-        script(src='vendor/jquery-validation/jquery.validate.min.js')
-        script(src='js/charts-home.js')
-        script(src='js/front.js')
+        // Javascript files
+        +java-script()

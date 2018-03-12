@@ -99,6 +99,7 @@ mixin main-navbar()
 
 mixin head(page_title)
     head
+        title #{page_title} | Kitapp
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='description', content='')
@@ -154,33 +155,40 @@ mixin java-script()
     script(src='js/front.js')
 
 
-mixin reader-row(id, name, surname, type, email, telegram)
+mixin reader-row(config)
     tr
         th#id(scope='row')
-            a(href='user-card.html') #{id}
-        th#name #{name}
-        th#surname #{surname}
-        td#type #{type}
-        td#e-mail #{email}
-        td#telegram #{telegram}
+            a(href='user-card.html') #{config.id}
+        th#name #{config.first_name}
+        th#surname #{config.last_name}
+        td#type #{config.type}
+        td#e-mail #{config.email}
+        td#telegram #{config.telegram}
         td#actions
             button.btn.btn-dark(type='button', data-toggle='modal', data-target='#myModal2') Edit
 
-mixin catalog-document(title, author, description, type, avaliable, bestseller, image)
+mixin catalog-document(config)
     .card
         .card-body
             .row
                 .col-lg-2
                     #doc-image.image.has-shadow
-                        img.img-fluid(src='images/#{image}', alt='...')
+                        img.img-fluid(src='images/#{config.image}', alt='...')
                 .col-lg-8.m-auto
-                    h2#title #{title}
-                    h4#author #{author}
-                    small#description #{description}
+                    h2#title #{config.title}
+                    for author in config.authors
+                        h4#author #{author.first_name} #{author.last_name}
+                    small#description #{config.description}
                     br
-                    button#document-type.btn.btn-sm.bg-blue(type='button') ##{type}
-                    button#availability.btn.btn-sm.bg-green(type='button') ##{avaliable}
-                    button#bestseller.btn.btn-sm.bg-yellow(type='button') ##{bestseller}
+                    button#document-type.btn.btn-sm.bg-blue(type='button') ##{config.type}
+                    if (config.available)
+                        button#availability.btn.btn-sm.bg-green(type='button') #available
+                    else
+                        button#availability.btn.btn-sm.bg-green(type='button') #not_available
+                    if (config.bestseller)
+                        button#bestseller.btn.btn-sm.bg-yellow(type='button') #bestseller
+                    else
+                        button#bestseller.btn.btn-sm.bg-yellow(type='button') #usual
                 .right-col.col-lg-2.m-auto
                     a(href="document.html")
                         button#details.btn.btn-secondary.book-btn(href="document.html" type='button') DETAILS
