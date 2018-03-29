@@ -42,7 +42,7 @@
               <!-- Navbar Header-->
               <div class="navbar-header">
                 <div class="offer animated fadeInRight">
-                  <!-- Navbar Brand--><a href="catalog.html" class="navbar-brand">
+                  <!-- Navbar Brand--><a href="dashboard.html" class="navbar-brand">
                     <div class="brand-text brand-big"><strong>Kitapp</strong><span>LMS</span></div>
                     <div class="brand-text brand-small"><strong>Kitapp</strong></div></a>
                   <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
@@ -53,15 +53,20 @@
                 <!-- Notifications-->
                 <li class="nav-item dropdown"><a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell-o"></i><span class="badge bg-red">3</span></a>
                   <ul aria-labelledby="notifications" class="dropdown-menu">
-                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                    <li><a rel="nofollow" href="dashboard.html" class="dropdown-item">
                         <div class="notification">
-                          <div class="notification-content"><i class="fa fa-envelope bg-green"></i>You have 2 new messages</div>
-                          <div class="notification-time"><small>1 hour ago</small></div>
+                          <div class="notification-content"><i class="fa fa-info bg-green"></i>The electronic library system "IPR-books"</div>
+                          <div class="notification-time"><small>1 minute ago</small></div>
                         </div></a></li>
-                    <li><a rel="nofollow" href="#" class="dropdown-item">
+                    <li><a rel="nofollow" href="user-card.html" class="dropdown-item">
+                        <div class="notification">
+                          <div class="notification-content"><i class="fa fa-book bg-red"></i>Outstanding request for book "Kolobok" by Folklor</div>
+                          <div class="notification-time"><small>7 hours ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="dashboard.html" class="dropdown-item">
                         <div class="notification">
                           <div class="notification-content"><i class="fa fa-calendar bg-blue"></i>International Women’s Day</div>
-                          <div class="notification-time"><small>4 minutes ago</small></div>
+                          <div class="notification-time"><small>1 day ago</small></div>
                         </div></a></li>
                     <li><a rel="nofollow" href="#" class="dropdown-item">
                         <div class="notification">
@@ -85,7 +90,7 @@
           <nav class="side-navbar">
             <!-- Sidebar Header-->
             <div class="sidebar-header d-flex align-items-center">
-              <div class="avatar"><img id="sidebar-avatar" src="images/avatar-1.jpg" class="img-fluid rounded-circle"/></div>
+              <div class="avatar"><a href="user-card.html"><img id="sidebar-avatar" src="images/avatar-1.jpg" class="img-fluid rounded-circle"/></a></div>
               <div class="title">
                 <h1 id="sidebar-username" class="h4">Elon Musk</h1>
                 <p id="sidebar-usertype">Librarian</p>
@@ -144,7 +149,7 @@
                               </div>
                               <div class="form-group">
                                 <label>Birth date</label>
-                                <input id="create_birth_date" type="number" placeholder="Birth date" class="form-control">
+                                <input id="create_birth_date" type="date" placeholder="Birth date" class="form-control">
                               </div>
                               <div class="form-group">
                                 <label>E-mail address</label>
@@ -173,6 +178,7 @@
                                 <select id="user-type" class="form-control">
                                   <option>Student</option>
                                   <option>Faculty</option>
+                                  <option>Visiting Professor</option>
                                   <option>Librarian</option>
                                 </select>
                               </div>
@@ -253,7 +259,7 @@
                                       </div>
                                       <div class="form-group">
                                         <label>Birth date</label>
-                                        <input id="create_birth_date" type="number" placeholder="Birth date" value="270797" class="form-control"/>
+                                        <input id="create_birth_date" type="date" placeholder="Birth date" value="1990-01-01" class="form-control"/>
                                       </div>
                                       <div class="form-group">
                                         <label>E-mail address</label>
@@ -286,12 +292,6 @@
                                     </form>
                                   </div>
                                   <div class="modal-footer">
-                                    <!--button#save-changes.btn.btn-primary(type='button')
-                                    | Save
-                                    | changes
-                                    -->
-                                    <!--button#close.btn.btn-secondary(type='button', data-dismiss='modal')| Close
-                                    -->
                                     <button type="button" class="btn btn-danger">Delete user</button>
                                     <button type="button" class="btn btn-primary">Save changes</button>
                                     <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>

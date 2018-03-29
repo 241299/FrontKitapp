@@ -87,33 +87,28 @@ html
                                                         button#close.btn.btn-secondary(type='button', data-dismiss='modal')
                                                             | Close
                                         .card-body
-                                            .row
-                                                .col-lg-2
-                                                    strong Search by:
-                                                .col-lg-5
-                                                    .i-checks
-                                                        input#search-by-title.checkbox-template(type='checkbox', value='', checked='')
-                                                        label(for='search-by-title') Title
-                                                    .i-checks
-                                                        input#search-by-author.checkbox-template(type='checkbox', value='', checked='')
-                                                        label(for='search-by-author') Author
-                                                    .i-checks
-                                                        input#search-by-type.checkbox-template(type='checkbox', value='', checked='')
-                                                        label(for='search-by-type') Type
-                                            .row
-                                                .col-lg-2
-                                                    strong Sort by:
-                                                .col-lg-2
-                                                    label
-                                                        select.form-control
-                                                            option(value='title') Title
-                                                            option(value='author') Author
-                                                            option(value='type') Type
-                                            .row
-                                                .col-lg-5
-                                                    input.form-control(type='search', placeholder='Documents searching', required='')
-                                                .col-lg-1
-                                                    input.btn(type='submit', value='Search')
+                                            form.form-horizontal
+                                                .form-group.row
+                                                    label.col-sm-3.form-control-label Search by title
+                                                    .col-sm-6
+                                                        label
+                                                        input.form-control(type='text', placeholder='Title', required='')
+                                                .form-group.row
+                                                    label.col-sm-3.form-control-label Search by authors
+                                                    .col-sm-6
+                                                        label
+                                                        input.form-control(type='text', placeholder='Autors', required='')
+                                                .form-group.row
+                                                    label.col-sm-3.form-control-label(for='search-by-type') Search by types
+                                                    .col-sm-6
+                                                        select#search-by-type.form-control
+                                                            option All
+                                                            option Books
+                                                            option Articles
+                                                            option Audio-Video material
+                                                .form-group.row
+                                                    .col-sm-2
+                                                        button#search.btn.btn-primary(type='submit') Search
 
                     section.document
                         .container-fluid
@@ -125,3 +120,4 @@ html
                     +footer()
         // Javascript files
         +java-script()
+        

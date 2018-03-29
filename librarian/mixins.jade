@@ -5,7 +5,8 @@ mixin sidebar(active_item)
         // Sidebar Header
         .sidebar-header.d-flex.align-items-center
             .avatar
-                img#sidebar-avatar.img-fluid.rounded-circle(src='images/avatar-1.jpg')
+                a(href="user-card.html")
+                    img#sidebar-avatar.img-fluid.rounded-circle(src='images/avatar-1.jpg')
             .title
                 h1#sidebar-username.h4 Elon Musk
                 p#sidebar-usertype Librarian
@@ -45,7 +46,7 @@ mixin main-navbar()
                             .navbar-header
                                 .offer.animated.fadeInRight
                                     // Navbar Brand
-                                    a.navbar-brand(href='catalog.html')
+                                    a.navbar-brand(href='dashboard.html')
                                         .brand-text.brand-big
                                             strong Kitapp
                                             span LMS
@@ -65,21 +66,30 @@ mixin main-navbar()
                                         span.badge.bg-red 3
                                     ul.dropdown-menu(aria-labelledby='notifications')
                                         li
-                                            a.dropdown-item(rel='nofollow', href='#')
+                                            a.dropdown-item(rel='nofollow', href='dashboard.html')
                                                 .notification
                                                     .notification-content
-                                                        i.fa.fa-envelope.bg-green
-                                                        | You have 2 new messages
+                                                        i.fa.fa-info.bg-green
+                                                        | The electronic library system "IPR-books"
                                                     .notification-time
-                                                        small 1 hour ago
+                                                        small 1 minute ago
+
                                         li
-                                            a.dropdown-item(rel='nofollow', href='#')
+                                            a.dropdown-item(rel='nofollow', href='user-card.html')
+                                                .notification
+                                                    .notification-content
+                                                        i.fa.fa-book.bg-red
+                                                        | Outstanding request for book "Kolobok" by Folklor
+                                                    .notification-time
+                                                        small 7 hours ago
+                                        li
+                                            a.dropdown-item(rel='nofollow', href='dashboard.html')
                                                 .notification
                                                     .notification-content
                                                         i.fa.fa-calendar.bg-blue
                                                         | International Women’s Day
                                                     .notification-time
-                                                        small 4 minutes ago
+                                                        small 1 day ago
                                         li
                                             a.dropdown-item(rel='nofollow', href='#')
                                                 .notification
@@ -186,9 +196,9 @@ mixin catalog-document(config)
                     else
                         button#availability.btn.btn-sm.bg-green(type='button') #not_available
                     if (config.bestseller)
-                        button#bestseller.btn.btn-sm.bg-yellow(type='button') #bestseller
+                        button#bestseller.btn.btn-sm.bg-orange(type='button') #bestseller
                     else
-                        button#bestseller.btn.btn-sm.bg-yellow(type='button') #usual
+                        button#bestseller.btn.btn-sm.bg-orange(type='button') #not_bestseller
                 .right-col.col-lg-2.m-auto
                     a(href="document.html")
                         button#details.btn.btn-secondary.book-btn(href="document.html" type='button') DETAILS
@@ -242,7 +252,7 @@ mixin edit-reader()
                             input#create_last_name.form-control(type='text', placeholder='Last name' value="Musk")
                         .form-group
                             label Birth date
-                            input#create_birth_date.form-control(type='number', placeholder='Birth date', value='270797')
+                            input#create_birth_date.form-control(type='date', placeholder='Birth date', value='1990-01-01')
                         .form-group
                             label E-mail address
                             input#create_email.form-control(type='email', aria-describedby='emailHelp', placeholder='Email', value='qwe@innopolis.ru')
@@ -267,11 +277,6 @@ mixin edit-reader()
                                 option Faculty
                                 option Librarian
                 .modal-footer
-                    //button#save-changes.btn.btn-primary(type='button')
-                        | Save
-                        | changes
-                    //button#close.btn.btn-secondary(type='button', data-dismiss='modal')
-                        | Close
                     button.btn.btn-danger(type='button') Delete user
                     button.btn.btn-primary(type='button') Save changes
                     button.btn.btn-secondary(type='button', data-dismiss='modal') Close
